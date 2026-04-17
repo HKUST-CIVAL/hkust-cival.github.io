@@ -300,17 +300,34 @@ header {
 }
 
 .alumni-item {
-    padding: 10px 0;
+    padding: 12px 15px;
     border-bottom: 1px solid #eaeaea;
+    transition: background-color 0.2s ease;
+    line-height: 1.6;
+}
+
+.alumni-item:hover {
+    background-color: #f9f9f9;
 }
 
 .alumni-item:last-child {
     border-bottom: none;
 }
 
+.alumni-item strong {
+    color: #0170B9;
+    font-weight: 600;
+}
+
 .alumni-list li {
-    padding: 10px 0;
+    padding: 12px 15px;
     border-bottom: 1px solid #eaeaea;
+    transition: background-color 0.2s ease;
+    line-height: 1.6;
+}
+
+.alumni-list li:hover {
+    background-color: #f9f9f9;
 }
 
 .alumni-list li:last-child {
