@@ -17,6 +17,10 @@ body {
     color: #4B4F58;
 }
 
+main {
+    min-height: calc(100vh - 70px - 200px);
+}
+
 a {
     color: #0170B9;
     text-decoration: none;
@@ -32,6 +36,26 @@ img {
 }
 
 /* === Header & Navigation === */
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+    min-height: 70px;
+}
+
+.header-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70px;
+}
+
+.site-logo img {
+    max-width: 207px;
+}
+
 .site-header {
     background-color: #ffffff;
     border-bottom: 1px solid #eaeaea;
@@ -365,10 +389,36 @@ img {
     margin-bottom: 10px;
 }
 
+.publication-header .note {
+    font-size: 14px;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
 .publication-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
+}
+
+.publication-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.section-title {
+    font-size: 32px;
+    color: #3a3a3a;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #0170B9;
+}
+
+.publication-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .publication-year {
@@ -398,6 +448,7 @@ img {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+.pub-image,
 .publication-image {
     flex-shrink: 0;
     width: 200px;
@@ -406,8 +457,17 @@ img {
     border-radius: 4px;
 }
 
+.pub-content,
 .publication-content {
     flex: 1;
+}
+
+.pub-title {
+    font-size: 18px;
+    color: #3a3a3a;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-weight: 600;
 }
 
 .publication-content h3 {
@@ -417,12 +477,14 @@ img {
     line-height: 1.4;
 }
 
+.pub-authors,
 .publication-authors {
     color: #666;
     font-size: 14px;
     margin-bottom: 8px;
 }
 
+.pub-venue,
 .publication-venue {
     color: #0170B9;
     font-weight: 600;
@@ -430,10 +492,19 @@ img {
     margin-bottom: 8px;
 }
 
+.award {
+    color: #d9534f;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.pub-links,
 .publication-links {
     margin-top: 10px;
 }
 
+.pub-links a,
 .publication-links a {
     display: inline-block;
     margin-right: 15px;
@@ -441,6 +512,7 @@ img {
     color: #0170B9;
 }
 
+.pub-links a:hover,
 .publication-links a:hover {
     text-decoration: underline;
 }
