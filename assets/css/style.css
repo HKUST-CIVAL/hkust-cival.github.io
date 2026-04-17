@@ -266,12 +266,13 @@ header {
 }
 
 .team-member-name a {
-    color: #3a3a3a;
+    color: #0170B9;
     text-decoration: none;
 }
 
 .team-member-name a:hover {
-    color: #0170B9;
+    color: #3a3a3a;
+    text-decoration: underline;
 }
 
 .team-member-position {
