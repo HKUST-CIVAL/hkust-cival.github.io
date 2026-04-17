@@ -258,32 +258,54 @@ header {
     padding: 20px;
 }
 
-.team-member-info h3 {
+.team-member-name {
     font-size: 20px;
     color: #3a3a3a;
     margin-bottom: 5px;
+    font-weight: 600;
 }
 
-.team-member-info .position {
+.team-member-name a {
+    color: #3a3a3a;
+    text-decoration: none;
+}
+
+.team-member-name a:hover {
+    color: #0170B9;
+}
+
+.team-member-position {
     color: #0170B9;
     font-weight: 600;
     margin-bottom: 10px;
-}
-
-.team-member-info .research {
     font-size: 14px;
-    color: #666;
-    margin-bottom: 10px;
 }
 
-.team-member-info .email {
+.team-member-details {
     font-size: 13px;
-    color: #999;
+    color: #666;
+}
+
+.team-member-details a {
+    color: #0170B9;
+}
+
+.team-member-details a:hover {
+    text-decoration: underline;
 }
 
 .alumni-list {
     list-style: none;
     padding: 0;
+}
+
+.alumni-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.alumni-item:last-child {
+    border-bottom: none;
 }
 
 .alumni-list li {
