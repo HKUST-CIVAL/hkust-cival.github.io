@@ -1,0 +1,14 @@
+# Thesis presentations and large files
+blog/2026-04_jianing_defense/*.pptx
+
+# Python scripts (temporary utilities)
+*.py
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor directories
+.vscode/
+.idea/
