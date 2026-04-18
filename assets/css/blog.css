@@ -66,10 +66,11 @@ body {
 }
 
 .blog-content figcaption {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #666;
+    margin-top: 12px;
+    font-size: 16px;
+    color: #555;
     font-style: italic;
+    font-weight: 500;
 }
 
 .blog-footer {
