@@ -1,6 +1,9 @@
 # Thesis presentations and large files
 blog/2026-04_jianing_defense/*.pptx
 
+# WordPress backup
+wordpress_backup/
+
 # Python scripts (temporary utilities)
 *.py
 
