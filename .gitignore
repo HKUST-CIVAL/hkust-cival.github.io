@@ -4,6 +4,9 @@ blog/2026-04_jianing_defense/*.pptx
 # WordPress backup
 wordpress_backup/
 
+# Project folder (deployed separately to remote server)
+project/
+
 # Python scripts (temporary utilities)
 *.py
 
