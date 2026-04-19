@@ -73,6 +73,40 @@ body {
     font-weight: 500;
 }
 
+/* Image Layout Classes */
+.image-row {
+    display: flex;
+    gap: 20px;
+    margin: 2em 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-row figure {
+    flex: 1;
+    margin: 0;
+    text-align: center;
+}
+
+.image-row img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.image-center {
+    margin: 2em 0;
+    text-align: center;
+}
+
+.image-center figure {
+    margin: 0;
+    display: inline-block;
+}
+
+.text-center {
+    text-align: center;
+}
+
 .blog-footer {
     max-width: 900px;
     margin: 40px auto 0;
@@ -99,5 +133,10 @@ body {
     
     .blog-content p {
         text-align: left;
+    }
+    
+    .image-row {
+        flex-direction: column;
+        gap: 15px;
     }
 }
