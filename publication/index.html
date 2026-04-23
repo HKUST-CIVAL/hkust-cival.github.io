@@ -17,7 +17,7 @@
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../team/index.html">Team</a></li>
                     <li><a href="index.html">Publications</a></li>
-                    <li><a href="https://project.hkust-cival.com/">Projects</a></li>
+                    <!-- <li><a href="https://project.hkust-cival.com/">Projects</a></li> -->
                     <li><a href="../blog/index.html">Blog</a></li>
                 </ul>
             </nav>
@@ -30,11 +30,44 @@
             <p class="note">* Corresponding author, <u>Students/RAs</u> under my supervision | <a href="https://scholar.google.com/citations?user=kTZhR2EAAAAJ&hl=en" target="_blank" style="color: inherit;">Google Scholar</a></p>
         </div>
 
+        <!-- Search and Filter Section -->
+        <div class="search-filter-container">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search publications..." />
+            </div>
+            <div class="filter-buttons">
+                <div class="filter-group">
+                    <button class="filter-btn" data-year="all">All Years <span class="filter-count" id="count-all-years"></span></button>
+                    <button class="filter-btn" data-year="2026">2026 <span class="filter-count" data-year-count="2026"></span></button>
+                    <button class="filter-btn" data-year="2025">2025 <span class="filter-count" data-year-count="2025"></span></button>
+                    <button class="filter-btn" data-year="2024">2024 <span class="filter-count" data-year-count="2024"></span></button>
+                    <button class="filter-btn" data-year="2023">2023 <span class="filter-count" data-year-count="2023"></span></button>
+                    <button class="filter-btn" data-year="2022">2022 <span class="filter-count" data-year-count="2022"></span></button>
+                    <button class="filter-btn" data-year="2021">Older <span class="filter-count" data-year-count="2021"></span></button>
+                </div>
+                <div class="filter-group" style="margin-top: 15px;" id="topic-filters">
+                    <button class="filter-btn" data-tag="all">All Topics <span class="filter-count" id="count-all-tags"></span></button>
+                    <button class="filter-btn" data-tag="visualization">Visualization <span class="filter-count" data-tag-count="visualization"></span></button>
+                    <button class="filter-btn" data-tag="visual-computing">Visual Computing <span class="filter-count" data-tag-count="visual-computing"></span></button>
+                    <button class="filter-btn" data-tag="cultural-heritage">Cultural Heritage <span class="filter-count" data-tag-count="cultural-heritage"></span></button>
+                    <button class="filter-btn" data-tag="creative-design">Creative Design <span class="filter-count" data-tag-count="creative-design"></span></button>
+                    <button class="filter-btn" data-tag="vr-ar">VR/AR <span class="filter-count" data-tag-count="vr-ar"></span></button>
+                    <button class="filter-btn" data-tag="human-ai">Human-AI Interaction <span class="filter-count" data-tag-count="human-ai"></span></button>
+                    <button class="filter-btn" data-tag="genai">GenAI <span class="filter-count" data-tag-count="genai"></span></button>
+                    <button class="filter-btn" data-tag="mllm">MLLM <span class="filter-count" data-tag-count="mllm"></span></button>
+                </div>
+            </div>
+            <div id="noResults" style="display: none; text-align: center; padding: 40px 20px; color: #666;">
+                <p style="font-size: 18px; margin-bottom: 10px;">No publications found</p>
+                <p style="font-size: 14px;">Try adjusting your search or filter criteria</p>
+            </div>
+        </div>
+
         <!-- 2026 Publications -->
-        <section class="publication-section">
+        <section class="publication-section" data-year="2026">
             <h3 class="section-title">2026</h3>
             <div class="publication-list">
-                <div class="publication-item">
+                <div class="publication-item" data-tags="vr-ar,visualization">
                     <img src="../assets/publications/2026_lessismore_far.png" alt="Less is More Afar: Responsive " class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">Less is More Afar: Responsive Design for Situated Visualization Based on Viewing Distance</div>
@@ -42,7 +75,7 @@
                         <div class="pub-venue">Virtual Reality, 2026.</div>
                     </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="mllm,cultural-heritage">
                     <img src="../assets/publications/2026_facade_vqa.png" alt="Fidelity-Driven Data Augmentat" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">Fidelity-Driven Data Augmentation for Multimodal Large Language Model on Architectural Heritage Interpretation</div>
@@ -50,7 +83,7 @@
                         <div class="pub-venue">npj Heritage Science, 2026.</div>
 <div class="pub-links"><a href="https://www.nature.com/articles/s40494-026-02446-2" target="_blank">Paper</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="human-ai,creative-design">
                     <img src="../assets/publications/2026_manyviews.png" alt="Introducing ManyViews: an AI-a" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">Introducing ManyViews: an AI-assisted tool to support citizens' engagement in the design of urban spaces</div>
@@ -58,7 +91,7 @@
                         <div class="pub-venue">International Journal of Human - Computer Studies, 2026.</div>
 <div class="pub-links"><a href="https://www.sciencedirect.com/science/article/pii/S1071581926000716" target="_blank">Paper</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="mllm,visual-computing">
                     <img src="../assets/publications/2026_davinci.png" alt="DaVinci: Reinforcing Visual-St" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">DaVinci: Reinforcing Visual-Structural Syntax in MLLMs for Generalized Scientific Diagram Parsing</div>
@@ -70,10 +103,10 @@
         </section>
 
         <!-- 2025 Publications -->
-        <section class="publication-section">
+        <section class="publication-section" data-year="2025">
             <h3 class="section-title">2025</h3>
             <div class="publication-list">
-                <div class="publication-item">
+                <div class="publication-item" data-tags="visualization,genai">
                     <img src="../assets/publications/2025_latentmap.png" alt="Latent Space Map for Visual Ut" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">Latent Space Map for Visual Utilization of Generated Data</div>
@@ -81,7 +114,7 @@
                         <div class="pub-venue">IEEE Transactions on Visualization and Computer Graphics, 2025.</div>
 <div class="pub-links"><a href="https://ieeexplore.ieee.org/document/11178207/" target="_blank">Paper</a> | <a href="https://github.com/ZhangYang9992/Latent-Space-Map" target="_blank">Code & Dataset</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="visualization,creative-design">
                     <img src="../assets/publications/2025_c2views.png" alt="C2Views: Knowledge-based Color" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">C2Views: Knowledge-based Colormap Design for Multiple-View Consistency</div>
@@ -89,7 +122,7 @@
                         <div class="pub-venue">Proceedings of Pacific Graphics 2025, 2025.</div>
 <div class="pub-links"><a href="https://arxiv.org/abs/2511.11112" target="_blank">arxiv</a> | <a href="https://github.com/Sunnary2604/C2Views" target="_blank">Code & Dataset</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="genai,human-ai,visualization">
                     <img src="../assets/publications/2025_DKMap.png" alt="DKMap: Interactive Exploration" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">DKMap: Interactive Exploration of Vision-Language Alignment in Multimodal Embeddings via Dynamic Kernel Enhanced Projection</div>
@@ -97,7 +130,7 @@
                         <div class="pub-venue">IEEE Transactions on Visualization and Computer Graphics (Proc. IEEE VIS 2025) , 32(1): 440 - 450, 2026.</div>
 <div class="pub-links"><a href="https://ieeexplore.ieee.org/document/11363926" target="_blank">Paper</a> | <a href="https://github.com/HKUST-CIVAL/DKMap" target="_blank">Code & Dataset</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="cultural-heritage,visualization,genai">
                     <img src="../assets/publications/2025_wadang.png" alt="Embodied Heritage by Integrati" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">Embodied Heritage by Integrating Digital and Physical Visualization of Eaves Tiles to Display Cultural Heritage Kinship</div>
@@ -105,7 +138,7 @@
                         <div class="pub-venue">npj Heritage Science, Article No.: 354, Pages 1 - 17, 2025.</div>
 <div class="pub-links"><a href="https://rdcu.be/ewZLo" target="_blank">Paper</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="genai,human-ai,visualization">
                     <img src="../assets/publications/2025%20AKRMap.png" alt="AKRMap: Adaptive Kernel Regres" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">AKRMap: Adaptive Kernel Regression for Trustworthy Visualization of Cross-Modal Embeddings</div>
@@ -113,7 +146,7 @@
                         <div class="pub-venue">Proceedings of International Conference on Machine Learning (ICML'25), 2025.</div>
 <div class="pub-links"><a href="https://arxiv.org/abs/2505.14664" target="_blank">arxiv</a> | <a href="https://github.com/yilinye/AKRMap" target="_blank">Code & Dataset</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="visualization,human-ai">
                     <img src="../assets/publications/2025_vizta.png" alt="VizTA: Enhancing Comprehension" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">VizTA: Enhancing Comprehension of Distributional Visualization with Visual-Lexical Fused Conversational Interface</div>
@@ -121,7 +154,7 @@
                         <div class="pub-venue">Computer Graphics Forum (Proc. EuroVis'25) , 44(3): e70110, 2025.</div>
 <div class="pub-links"><a href="https://arxiv.org/abs/2504.14507" target="_blank">arxiv</a> | <a href="https://doi.org/10.1111/cgf.70110" target="_blank">DOI</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="genai,human-ai,visualization">
                     <img src="../assets/publications/2025_picasso.png" alt="Unified Visual Comparison Fram" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">Unified Visual Comparison Framework for Human and AI Paintings using Neural Embeddings and Computational Aesthetics</div>
@@ -129,7 +162,7 @@
                         <div class="pub-venue">IEEE Computer Graphics and Applications (Special Issue on Generative AI for Computer Graphics) , 45(2): 19-30, 2025.</div>
 <div class="pub-links"><a href="https://doi.org/10.1109/MCG.2025.3555122" target="_blank">DOI</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="genai,creative-design,human-ai">
                     <img src="../assets/publications/2025_gencolor.png" alt="GenColor: Generative Color-Con" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">GenColor: Generative Color-Concept Association in Visual Design</div>
@@ -137,7 +170,7 @@
                         <div class="pub-venue">Proceedings of ACM CHI Conference on Human Factors in Computing Systems, 2025. Article No.: 544, Pages 1 - 19.</div>
 <div class="pub-links"><a href="https://arxiv.org/abs/2503.03236" target="_blank">arxiv</a> | <a href="https://doi.org/10.1145/3706598.3713418" target="_blank">DOI</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="genai,creative-design,human-ai">
                     <img src="../assets/publications/2025_sketchflex.png" alt="SketchFlex: Facilitating Spati" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">SketchFlex: Facilitating Spatial-Semantic Coherence in Text-to-Image Generation with Region-Based Sketches</div>
@@ -145,7 +178,7 @@
                         <div class="pub-venue">Proceedings of ACM CHI Conference on Human Factors in Computing Systems, 2025. Article No.: 546, Pages 1 - 19.</div>
 <div class="pub-links"><a href="https://arxiv.org/abs/2502.07556" target="_blank">arxiv</a> | <a href="https://doi.org/10.1145/3706598.3713801" target="_blank">DOI</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="visualization">
                     <img src="../assets/publications/2025_dashboard_vision.png" alt="Dashboard Vision: Using Eye-Tr" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">Dashboard Vision: Using Eye-Tracking to Understand and Predict Dashboard Viewing Behaviors</div>
@@ -153,7 +186,7 @@
                         <div class="pub-venue">IEEE Transactions on Visualization and Computer Graphics, 31(10): 6930 - 6945, 2025.</div>
 <div class="pub-links"><a href="https://manlingyang123.github.io/Dashboard-Vision/" target="_blank">Homepage</a> | <a href="https://doi.org/10.1109/TVCG.2025.3532497" target="_blank">DOI</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="visualization,human-ai">
                     <img src="../assets/publications/2024_finflier.jpg" alt="FinFlier: Automating Graphical" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">FinFlier: Automating Graphical Overlays for Financial Visualizations with Knowledge-Grounding Large Language Model</div>
@@ -161,7 +194,7 @@
                         <div class="pub-venue">IEEE Transactions on Visualization and Computer Graphics, 31(9): 6353 - 6369, 2025.</div>
 <div class="pub-links"><a href="https://arxiv.org/abs/2412.06821v1" target="_blank">arxiv</a> | <a href="https://doi.org/10.1109/TVCG.2024.3514138" target="_blank">DOI</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="vr-ar,cultural-heritage">
                     <img src="../assets/publications/2024%20ICH.png" alt="Centennial Drama Reimagined: A" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">Centennial Drama Reimagined: An Immersive Experience of Intangible Cultural Heritage through Contextual Storytelling in Virtual Reality</div>
@@ -173,10 +206,10 @@
         </section>
 
         <!-- 2024 Publications -->
-        <section class="publication-section">
+        <section class="publication-section" data-year="2024">
             <h3 class="section-title">2024</h3>
             <div class="publication-list">
-                <div class="publication-item">
+                <div class="publication-item" data-tags="creative-design,human-ai">
                     <img src="../assets/publications/2024_AIRays.png" alt="AI-rays: Exploring Bias in the" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">AI-rays: Exploring Bias in the Gaze of AI Through a Multimodal Interactive Installation</div>
@@ -184,7 +217,7 @@
                         <div class="pub-venue">Proceedings of Siggraph Asia 2024 Art Paper, 2024, Article 1, 1 - 7.</div>
 <div class="pub-links"><a href="https://arxiv.org/abs/2410.03786" target="_blank">arxiv</a> | <a href="https://dl.acm.org/doi/10.1145/3680530.3695433" target="_blank">DOI</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="visualization,visual-computing,mllm">
                     <img src="../assets/publications/2024_CQA.png" alt="Advancing Multimodal Large Lan" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">Advancing Multimodal Large Language Models in Chart Question Answering with Visualization-Referenced Instruction Tuning</div>
@@ -192,7 +225,7 @@
                         <div class="pub-venue">IEEE Transactions on Visualization and Computer Graphics (Proc. IEEE VIS 2024), 31(1): 525 - 535, 2025.</div>
 <div class="pub-links"><a href="https://arxiv.org/abs/2407.20174" target="_blank">arxiv</a> | <a href="https://doi.org/10.1109/TVCG.2024.3456159" target="_blank">DOI</a> | <a href="https://github.com/zengxingchen/ChartQA-MLLM" target="_blank">Data & Code</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="visualization,human-ai,mllm">
                     <img src="../assets/publications/2024_modalchorus.png" alt="ModalChorus: Visual Probing an" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">ModalChorus: Visual Probing and Alignment of Multi-modal Embeddings via Modal Fusion Map</div>
@@ -200,7 +233,7 @@
                         <div class="pub-venue">IEEE Transactions on Visualization and Computer Graphics (Proc. IEEE VIS 2024), 31(1): 294 - 304, 2025.</div>
 <div class="pub-links"><a href="https://arxiv.org/abs/2407.12315" target="_blank">arxiv</a> | <a href="https://doi.org/10.1109/TVCG.2024.3456387" target="_blank">DOI</a> | <a href="https://github.com/yilinye/modal-fusion-map" target="_blank">Data & Code</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="mllm,visual-computing">
                     <img src="../assets/publications/2024_georeasoner.png" alt="GeoReasoner: Geo-localization " class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">GeoReasoner: Geo-localization with Reasoning in Street Views using a Large Vision-Language Model</div>
@@ -208,7 +241,7 @@
                         <div class="pub-venue">Proceedings of The International Conference on Machine Learning (ICML'24), Pages 29222-29233, 2024.</div>
 <div class="pub-links"><a href="https://arxiv.org/abs/2406.18572v1" target="_blank">arxiv</a> | <a href="https://github.com/lingli1996/GeoReasoner" target="_blank">Data & Code</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="genai,visualization">
                     <img src="../assets/publications/2024_GenAIVis.jpg" alt="Generative AI for Visualizatio" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">Generative AI for Visualization: State of the Art and Future Directions</div>
@@ -216,7 +249,7 @@
                         <div class="pub-venue">Visual Informatics, 8(2): 43-66, 2024.</div>
 <div class="pub-links"><a href="https://arxiv.org/abs/2404.18144" target="_blank">arxiv</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="vr-ar,mllm">
                     <img src="../assets/publications/2024_VirtuWander.png" alt="VirtuWander: Enhancing Multi-m" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">VirtuWander: Enhancing Multi-modal Interaction for Virtual Tour Guidance through Large Language Models</div>
@@ -224,7 +257,7 @@
                         <div class="pub-venue">Proceedings of The ACM CHI Conference on Human Factors in Computing Systems, 2024, Article 612, 1–20.</div>
 <div class="pub-links"><a href="https://hkust-cival.com/projects/virtuwander/" target="_blank">Homepage</a> | <a href="https://arxiv.org/abs/2401.11923" target="_blank">arxiv</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="mllm,creative-design,human-ai">
                     <img src="../assets/publications/2024_C2ldeas.png" alt="C2Ideas: Supporting Creative I" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">C2Ideas: Supporting Creative Interior Color Design Ideation with Large Language Model</div>
@@ -232,7 +265,7 @@
                         <div class="pub-venue">Proceedings of The ACM CHI Conference on Human Factors in Computing Systems, 2024, Article 172, 1–18.</div>
 <div class="pub-links"><a href="https://arxiv.org/abs/2401.12586" target="_blank">arxiv</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="mllm,human-ai,creative-design">
                     <img src="../assets/publications/2024_IntentTuner.png" alt="IntentTuner: An Interactive Fr" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">IntentTuner: An Interactive Framework for Integrating Human Intentions in Fine-tuning Text-to-Image Generative Models</div>
@@ -240,7 +273,7 @@
                         <div class="pub-venue">Proceedings of The ACM CHI Conference on Human Factors in Computing Systems, 2024, Article 182, 1–18.</div>
 <div class="pub-links"><a href="https://arxiv.org/abs/2401.15559" target="_blank">arxiv</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="creative-design,genai">
                     <img src="../assets/publications/2024_typedance.png" alt="TypeDance: Creating Semantic T" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">TypeDance: Creating Semantic Typographic Logos from Image through Personalized Generation</div>
@@ -248,7 +281,7 @@
                         <div class="pub-venue">Proceedings of The ACM CHI Conference on Human Factors in Computing Systems, 2024, Article 175, 1–18.</div>
 <div class="pub-links"><a href="https://arxiv.org/abs/2401.11094" target="_blank">arxiv</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="genai,creative-design">
                     <img src="../assets/publications/2024_plantography.png" alt="PlantoGraphy: Incoporating Ite" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">PlantoGraphy: Incoporating Iterative Design Process into Generative Artificial Intelligence for Landscape Rendering</div>
@@ -256,7 +289,7 @@
                         <div class="pub-venue">Proceedings of The ACM CHI Conference on Human Factors in Computing Systems, 2024, Article 168, 1–19.</div>
 <div class="pub-links"><a href="https://arxiv.org/abs/2401.17120" target="_blank">arxiv</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="vr-ar,visualization">
                     <img src="../assets/publications/2024_situated_interaction.png" alt="“Make Interaction Situated”: D" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">“Make Interaction Situated”: Designing User Acceptable Interaction for Situated Visualization in Public Environments</div>
@@ -264,7 +297,7 @@
                         <div class="pub-venue">Proceedings of The ACM CHI Conference on Human Factors in Computing Systems, 2024, Article 196, 1–21.</div>
 <div class="pub-links"><a href="https://arxiv.org/abs/2402.14251" target="_blank">arxiv</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="vr-ar">
                     <img src="../assets/publications/2024_vr_stroke.png" alt="Generating Virtual Reality Str" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">Generating Virtual Reality Stroke Gesture Data from Out-of-Distribution Desktop Stroke Gesture Data</div>
@@ -272,7 +305,7 @@
                         <div class="pub-venue">Proceedings of The IEEE Conference on Virtual Reality and 3D User Interfaces, 2024, pp. 732-742.</div>
 <div class="pub-links"><a href="https://doi.org/10.1109/VR58804.2024.00093" target="_blank">DOI</a> | <a href="https://github.com/yuanlinping/VRStrokeOOD" target="_blank">Code</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="mllm,human-ai">
                     <img src="../assets/publications/2024_cscw_contemporary%20art.png" alt="The Contemporary Art of Image " class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">The Contemporary Art of Image Search: Iterative User Intent Expansion via Vision-Language Model</div>
@@ -280,7 +313,7 @@
                         <div class="pub-venue">Proc. ACM Hum.-Comput. Interact., vol. 8, no. CSCW1, Article 180:1-31, 2024.</div>
 <div class="pub-links"><a href="https://arxiv.org/abs/2312.01656" target="_blank">arxiv</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="visualization">
                     <img src="../assets/publications/2024_MetroBUX.png" alt="MetroBUX: A Topology-based Vis" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">MetroBUX: A Topology-based Visual Analytics for Bus Operational Uncertainty EXploration</div>
@@ -288,7 +321,7 @@
                         <div class="pub-venue">IEEE Transactions on Intelligent Transportation Systems, vol. 25, no. 6, pp. 5525-5538, 2024.</div>
 <div class="pub-links"><a href="https://doi.org/10.1109/TITS.2023.3338700" target="_blank">DOI</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="creative-design,visualization">
                     <img src="../assets/publications/2023%20layout_adaption.png" alt="Semi-Automatic Layout Adaptati" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">Semi-Automatic Layout Adaptation for Responsive Multiple-View Visualization Design</div>
@@ -296,7 +329,7 @@
                         <div class="pub-venue">IEEE Transactions on Visualization and Computer Graphics, vol. 30, no. 7, pp. 3798 - 3812, 2024.</div>
 <div class="pub-links"><a href="https://hkust-cival.com/projects/adaMV/" target="_blank">Homepage</a> | <a href="https://hkust-cival.com/projects/adaMV/material/0_adapative_layout.pdf" target="_blank">Paper</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="visualization,human-ai">
                     <img src="../assets/publications/2022_visatlas.png" alt="VISAtlas: An Image-based Explo" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">VISAtlas: An Image-based Exploration and Query System for Large Visualization Collections via Neural Image Embedding</div>
@@ -308,10 +341,10 @@
         </section>
 
         <!-- 2023 Publications -->
-        <section class="publication-section">
+        <section class="publication-section" data-year="2023">
             <h3 class="section-title">2023</h3>
             <div class="publication-list">
-                <div class="publication-item">
+                <div class="publication-item" data-tags="genai,creative-design,visualization">
                     <img src="../assets/publications/2023-chartspark.png" alt="Let the Chart Spark: Embedding" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">Let the Chart Spark: Embedding Semantic Context into Chart with Text-to-Image Generative Model</div>
@@ -319,7 +352,7 @@
                         <div class="pub-venue">IEEE Transactions on Visualization and Computer Graphics (Proc. IEEE VIS 2023), 30(1): 284 - 294, 2024.</div>
 <div class="pub-links"><a href="https://arxiv.org/abs/2304.14630" target="_blank">arxiv</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="human-ai,visualization">
                     <img src="../assets/publications/2023-timetuner.png" alt="TimeTuner: Diagnosing Time Rep" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">TimeTuner: Diagnosing Time Representations for Time-Series Forecasting with Counterfactual Explanations</div>
@@ -327,7 +360,7 @@
                         <div class="pub-venue">IEEE Transactions on Visualization and Computer Graphics (Proc. IEEE VIS 2023), 30(1): 1183 - 1193, 2024.</div>
 <div class="pub-links"><a href="https://arxiv.org/abs/2307.09916" target="_blank">arxiv</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="human-ai,visualization">
                     <img src="../assets/publications/2023-wytywyr.png" alt="WYTIWYR: A User Intent-Aware F" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">WYTIWYR: A User Intent-Aware Framework with Multi-modal Inputs for Visualization Retrieval</div>
@@ -335,7 +368,7 @@
                         <div class="pub-venue">Computer Graphics Forum (Proc. EuroVis 2023), 42(3): 311-322, 2023.</div>
 <div class="pub-links"><a href="https://arxiv.org/abs/2304.06991" target="_blank">arxiv</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="creative-design,genai">
                     <img src="../assets/publications/2021_actfloor-gan.jpg" alt="ActFloor-GAN: Activity-Guided " class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">ActFloor-GAN: Activity-Guided Adversarial Networks for Human-Centric Floorplan Design</div>
@@ -343,7 +376,7 @@
                         <div class="pub-venue">IEEE Transactions on Visualization and Computer Graphics, 29(3): 1610-1624, 2023.</div>
 <div class="pub-links"><a href="https://arxiv.org/abs/2111.03545" target="_blank">Paper</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="visual-computing">
                     <img src="../assets/publications/2021_convolutions.jpg" alt="Modeling Spatial Nonstationari" class="pub-image">
                     <div class="pub-content">
                         <div class="pub-title">Modeling Spatial Nonstationarity via Deformable Convolutions for Deep Traffic Flow Prediction</div>
@@ -355,10 +388,10 @@
         </section>
 
         <!-- 2022 Publications -->
-        <section class="publication-section">
+        <section class="publication-section" data-year="2022">
             <h3 class="section-title">2022</h3>
             <div class="publication-list">
-                <div class="publication-item">
+                <div class="publication-item" data-tags="vr-ar,visualization">
                     <img src="../assets/publications/2022_mv_ar.jpg" alt="Effects of View Layout on Situ" class="pub-image" loading="lazy">
                     <div class="pub-content">
                         <div class="pub-title">Effects of View Layout on Situated Analytics for Multiple Representations in Immersive Visualization</div>
@@ -366,7 +399,7 @@
                         <div class="pub-venue">IEEE Transactions on Visualization and Computer Graphics (Proc. IEEE VIS 2022), 29(1): 440 - 450, 2023.</div>
 <div class="pub-links"><a href="https://hkustgz-my.sharepoint.com/:b:/g/personal/weizeng_hkust-gz_edu_cn/EVwKqTKNaPVGkkP5qunovLkBV85lLlAQhH9284l4-cfxzQ?e=PhTyfg" target="_blank">Paper</a></div>                    </div>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item" data-tags="visualization,visual-computing">
                     <img src="../assets/publications/2021_colormap.png" alt="Deep Colormap Extraction from " class="pub-image" loading="lazy">
                     <div class="pub-content">
                         <div class="pub-title">Deep Colormap Extraction from Visualizations</div>
@@ -378,10 +411,10 @@
         </section>
 
         <!-- 2021 and Before Publications -->
-        <section class="publication-section">
+        <section class="publication-section" data-year="2021">
             <h3 class="section-title">2021 and Before</h3>
             <div class="publication-list">
-                <div class="publication-item">
+                <div class="publication-item" data-tags="visual-computing">
                     <img src="../assets/publications/2021_floorlevel.png" alt="FloorLevel-Net: Recognizing Fl" class="pub-image" loading="lazy">
                     <div class="pub-content">
                         <div class="pub-title">FloorLevel-Net: Recognizing Floor-Level Lines with Height-Attention-Guided Multi-task Learning</div>
@@ -390,7 +423,7 @@
 <div class="pub-links"><a href="https://wumengyangok.github.io/Project/FloorLevelNet" target="_blank">Code & Data</a> | <a href="https://arxiv.org/abs/2107.02462" target="_blank">Paper</a> | <a href="https://doi.org/10.1109/TIP.2021.3096090" target="_blank">DOI</a></div>                    </div>
                 </div>
 
-                <div class="publication-item">
+                <div class="publication-item" data-tags="visualization">
                     <img src="../assets/publications/2020_mv_landscape.png" alt="Composition and Configuration " class="pub-image" loading="lazy">
                     <div class="pub-content">
                         <div class="pub-title">Composition and Configuration Patterns in Multiple-View Visualizations</div>
@@ -399,7 +432,7 @@
 <div class="pub-links"><a href="https://mvlandscape.bitbucket.io/" target="_blank">Homepage</a> | <a href="https://arxiv.org/abs/2007.15407" target="_blank">Paper</a> | <a href="https://youtu.be/WSPCbIdDnFQ" target="_blank">Video</a> | <a href="https://valt.cs.tufts.edu/papers/multiple-view/mv_data.zip" target="_blank">Data</a> | <a href="https://doi.org/10.1109/TVCG.2020.3030338" target="_blank">DOI</a></div>                    </div>
                 </div>
 
-                <div class="publication-item">
+                <div class="publication-item" data-tags="visualization,human-ai">
                     <img src="../assets/publications/2020_vis4maup.png" alt="Revisiting the Modifiable Area" class="pub-image" loading="lazy">
                     <div class="pub-content">
                         <div class="pub-title">Revisiting the Modifiable Areal Unit Problem in Deep Traffic Prediction with Visual Analytics</div>
@@ -408,7 +441,7 @@
 <div class="pub-links"><a href="https://arxiv.org/abs/2007.15486" target="_blank">Paper</a> | <a href="https://youtu.be/FC7dRXbrZ4s" target="_blank">Video</a> | <a href="https://doi.org/10.1109/TVCG.2020.3030410" target="_blank">DOI</a></div>                    </div>
                 </div>
 
-                <div class="publication-item">
+                <div class="publication-item" data-tags="visualization">
                     <img src="../assets/publications/2020_topology_density_map.png" alt="Topology Density Map for Urban" class="pub-image" loading="lazy">
                     <div class="pub-content">
                         <div class="pub-title">Topology Density Map for Urban Data Visualization and Analysis</div>
@@ -417,7 +450,7 @@
 <div class="pub-links"><a href="https://arxiv.org/abs/2007.15828" target="_blank">Paper</a> | <a href="https://doi.org/10.1109/TVCG.2020.3030469" target="_blank">DOI</a></div>                    </div>
                 </div>
 
-                <div class="publication-item">
+                <div class="publication-item" data-tags="visual-computing">
                     <img src="../assets/publications/2020_overlay.png" alt="Deep Recognition of Vanishing-" class="pub-image" loading="lazy">
                     <div class="pub-content">
                         <div class="pub-title">Deep Recognition of Vanishing-Point-Constrained Building Planes in Urban Street Views</div>
@@ -426,7 +459,7 @@
 <div class="pub-links"><a href="papers/2020%20ARScape.pdf" target="_blank">Paper</a> | <a href="https://doi.org/10.1109/TIP.2020.2986894" target="_blank">DOI</a></div>                    </div>
                 </div>
 
-                <div class="publication-item">
+                <div class="publication-item" data-tags="visualization">
                     <img src="../assets/publications/2019_shenzhen_raeb.png" alt="Route-Aware Edge Bundling" class="pub-image" loading="lazy">
                     <div class="pub-content">
                         <div class="pub-title">Route-Aware Edge Bundling for Visualizing Origin-Destination Trails in Urban Traffic</div>
@@ -435,7 +468,7 @@
 <div class="pub-links"><a href="papers/2019_RAEB.pdf" target="_blank">Paper</a> | <a href="../presentation/EuroVis19_ppt.pdf" target="_blank">Presentation</a> | <a href="https://youtu.be/SHZmj4p1WwQ" target="_blank">Video</a> | <a href="https://doi.org/10.1111/cgf.13712" target="_blank">DOI</a></div>                    </div>
                 </div>
 
-                <div class="publication-item">
+                <div class="publication-item" data-tags="visualization">
                     <img src="../assets/publications/2018-vitalvizor.png" alt="VitalVizor: A Visual Analytics" class="pub-image" loading="lazy">
                     <div class="pub-content">
                         <div class="pub-title">VitalVizor: A Visual Analytics System for Studying Urban Vitality</div>
@@ -444,7 +477,7 @@
 <div class="pub-links"><a href="papers/2018%20VitalVizor.pdf" target="_blank">Paper</a> | <a href="https://www.youtube.com/watch?v=MAxNu6jc2mo" target="_blank">Video</a> | <a href="https://doi.org/10.1109/MCG.2018.053491730" target="_blank">DOI</a></div>                    </div>
                 </div>
 
-                <div class="publication-item">
+                <div class="publication-item" data-tags="visualization">
                     <img src="../assets/publications/2018_streetvizor.png" alt="StreetVizor: Visual Exploration" class="pub-image" loading="lazy">
                     <div class="pub-content">
                         <div class="pub-title">StreetVizor: Visual Exploration of Human-Scale Urban Forms Based on Street Views</div>
@@ -453,7 +486,7 @@
 <div class="pub-links"><a href="papers/2018%20streetvizor.pdf" target="_blank">Paper</a> | <a href="https://www.youtube.com/watch?v=K-bCY71P8MM&list=PL3-tIMzrYMbKRmrau4n1HIbMJMzSma8wh&index=8&t=47s" target="_blank">Video</a> | <a href="https://doi.org/10.1109/TVCG.2017.2744159" target="_blank">DOI</a></div>                    </div>
                 </div>
 
-                <div class="publication-item">
+                <div class="publication-item" data-tags="visualization">
                     <img src="../assets/publications/2017_poi_sign.png" alt="Visualizing the Relationship between" class="pub-image" loading="lazy">
                     <div class="pub-content">
                         <div class="pub-title">Visualizing the Relationship between Human Mobility and Points-of-Interest</div>
@@ -462,7 +495,7 @@
 <div class="pub-links"><a href="papers/2017%20POI.pdf" target="_blank">Paper</a> | <a href="https://youtu.be/aaBU9xJpOj0" target="_blank">Video</a> | <a href="https://doi.org/10.1109/TITS.2016.2639320" target="_blank">DOI</a></div>                    </div>
                 </div>
 
-                <div class="publication-item">
+                <div class="publication-item" data-tags="visualization">
                     <img src="../assets/publications/2016_od.png" alt="Visualizing Waypoints-Constrained" class="pub-image" loading="lazy">
                     <div class="pub-content">
                         <div class="pub-title">Visualizing Waypoints-Constrained Origin-Destination Patterns for Massive Transportation Data</div>
@@ -471,7 +504,7 @@
 <div class="pub-links"><a href="papers/2016%20Waypoints%20OD.pdf" target="_blank">Paper</a> | <a href="https://www.youtube.com/watch?v=lAdqxSURCGQ" target="_blank">Video</a> | <a href="https://doi.org/10.1111/cgf.12778" target="_blank">DOI</a></div>                    </div>
                 </div>
 
-                <div class="publication-item">
+                <div class="publication-item" data-tags="visualization">
                     <img src="../assets/publications/2014_vis_mobility.png" alt="Visualizing Mobility of Public" class="pub-image" loading="lazy">
                     <div class="pub-content">
                         <div class="pub-title">Visualizing Mobility of Public Transportation System</div>
@@ -480,7 +513,7 @@
 <div class="pub-links"><a href="papers/2014%20Mobility.pdf" target="_blank">Paper</a> | <a href="http://youtube=http://www.youtube.com/watch?v=Q95c8PpneT8" target="_blank">Video</a> | <a href="https://doi.org/10.1109/TVCG.2014.2346893" target="_blank">DOI</a></div>                    </div>
                 </div>
 
-                <div class="publication-item">
+                <div class="publication-item" data-tags="visualization">
                     <img src="../assets/publications/2013_interchange.png" alt="Visualizing Interchange Patter" class="pub-image" loading="lazy">
                     <div class="pub-content">
                         <div class="pub-title">Visualizing Interchange Patterns in Massive Movement Data</div>
@@ -496,5 +529,384 @@
         <p>Copyright © 2026 HKUST CIVAL, HKUST(GZ)</p>
         <p><a href="http://beian.miit.gov.cn/">粤ICP备2022052112号</a></p>
     </footer>
+
+    <script>
+        // Search and Filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('searchInput');
+            const yearFilterButtons = document.querySelectorAll('[data-year]');
+            const tagFilterButtons = document.querySelectorAll('[data-tag]');
+            const publicationSections = document.querySelectorAll('.publication-section');
+            const publicationItems = document.querySelectorAll('.publication-item');
+
+            let selectedYears = new Set();
+            let selectedTags = new Set();
+            let searchTerm = '';
+
+            // Handle year filter clicks (toggle)
+            yearFilterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const year = this.getAttribute('data-year');
+                    
+                    if (year === 'all') {
+                        // Toggle all years
+                        if (selectedYears.has('all')) {
+                            selectedYears.clear();
+                        } else {
+                            selectedYears.clear();
+                            selectedYears.add('all');
+                        }
+                    } else {
+                        // Toggle specific year
+                        selectedYears.delete('all');
+                        if (selectedYears.has(year)) {
+                            selectedYears.delete(year);
+                        } else {
+                            selectedYears.add(year);
+                        }
+                    }
+                    
+                    // Update button states
+                    yearFilterButtons.forEach(btn => {
+                        const btnYear = btn.getAttribute('data-year');
+                        if (selectedYears.has(btnYear)) {
+                            btn.classList.add('active');
+                        } else {
+                            btn.classList.remove('active');
+                        }
+                    });
+                    
+                    filterAndSearch();
+                    updateCounts();
+                });
+            });
+
+            // Handle tag filter clicks (toggle)
+            tagFilterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const tag = this.getAttribute('data-tag');
+                    
+                    if (tag === 'all') {
+                        // Toggle all tags
+                        if (selectedTags.has('all')) {
+                            selectedTags.clear();
+                        } else {
+                            selectedTags.clear();
+                            selectedTags.add('all');
+                        }
+                    } else {
+                        // Toggle specific tag
+                        selectedTags.delete('all');
+                        if (selectedTags.has(tag)) {
+                            selectedTags.delete(tag);
+                        } else {
+                            selectedTags.add(tag);
+                        }
+                    }
+                    
+                    // Update button states
+                    tagFilterButtons.forEach(btn => {
+                        const btnTag = btn.getAttribute('data-tag');
+                        if (selectedTags.has(btnTag)) {
+                            btn.classList.add('active');
+                        } else {
+                            btn.classList.remove('active');
+                        }
+                    });
+                    
+                    filterAndSearch();
+                    updateCounts();
+                });
+            });
+
+            // Re-sort topic buttons when topic filter container is clicked
+            const topicFiltersContainer = document.getElementById('topic-filters');
+            topicFiltersContainer.addEventListener('click', function(e) {
+                if (e.target.classList.contains('filter-btn')) {
+                    // Delay sorting to allow state update first
+                    setTimeout(updateCounts, 10);
+                }
+            });
+
+            // Handle search input
+            searchInput.addEventListener('input', function() {
+                searchTerm = this.value.toLowerCase().trim();
+                filterAndSearch();
+                updateCounts();
+            });
+
+            // Add tag badges to each publication
+            publicationItems.forEach(item => {
+                const tags = item.getAttribute('data-tags') || '';
+                if (tags) {
+                    const tagList = tags.split(',');
+                    const tagBadges = tagList.map(tag => {
+                        const tagNames = {
+                            'visualization': 'Visualization',
+                            'visual-computing': 'Visual Computing',
+                            'cultural-heritage': 'Cultural Heritage',
+                            'creative-design': 'Creative Design',
+                            'vr-ar': 'VR/AR',
+                            'human-ai': 'Human-AI',
+                            'genai': 'GenAI',
+                            'mllm': 'MLLM'
+                        };
+                        return `<span class="pub-tag" data-clickable-tag="${tag}">${tagNames[tag] || tag}</span>`;
+                    }).join('');
+                    
+                    const content = item.querySelector('.pub-content');
+                    const linksDiv = content.querySelector('.pub-links');
+                    const tagContainer = document.createElement('div');
+                    tagContainer.className = 'pub-tags';
+                    tagContainer.innerHTML = tagBadges;
+                    
+                    if (linksDiv) {
+                        content.insertBefore(tagContainer, linksDiv);
+                    } else {
+                        content.appendChild(tagContainer);
+                    }
+                }
+            });
+
+            // Calculate and display publication counts
+            function updateCounts() {
+                // Count by year
+                const yearCounts = {};
+                let totalPublications = 0;
+                
+                publicationSections.forEach(section => {
+                    const year = section.getAttribute('data-year');
+                    const items = section.querySelectorAll('.publication-item');
+                    yearCounts[year] = items.length;
+                    totalPublications += items.length;
+                });
+                
+                // Update year filter buttons
+                document.getElementById('count-all-years').textContent = totalPublications;
+                document.querySelectorAll('[data-year-count]').forEach(btn => {
+                    const year = btn.getAttribute('data-year-count');
+                    btn.textContent = yearCounts[year] || 0;
+                });
+                
+                // Count by tag
+                const tagCounts = {};
+                publicationItems.forEach(item => {
+                    const tags = item.getAttribute('data-tags') || '';
+                    if (tags) {
+                        tags.split(',').forEach(tag => {
+                            tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+                        });
+                    }
+                });
+                
+                // Update tag filter buttons
+                document.getElementById('count-all-tags').textContent = totalPublications;
+                document.querySelectorAll('[data-tag-count]').forEach(btn => {
+                    const tag = btn.getAttribute('data-tag-count');
+                    btn.textContent = tagCounts[tag] || 0;
+                });
+            }
+            
+            updateCounts();
+
+            // Make publication tag badges clickable
+            document.addEventListener('click', function(e) {
+                if (e.target.classList.contains('pub-tag')) {
+                    const tag = e.target.getAttribute('data-clickable-tag');
+                    if (tag) {
+                        // Update tag filter buttons
+                        tagFilterButtons.forEach(btn => {
+                            btn.classList.remove('active');
+                            if (btn.getAttribute('data-tag') === tag) {
+                                btn.classList.add('active');
+                            }
+                        });
+                        
+                        // Reset year filter to all
+                        yearFilterButtons.forEach(btn => {
+                            btn.classList.remove('active');
+                            if (btn.getAttribute('data-year') === 'all') {
+                                btn.classList.add('active');
+                            }
+                        });
+                        currentYear = 'all';
+                        currentTag = tag;
+                        
+                        // Apply filter
+                        filterAndSearch();
+                        
+                        // Scroll to top of publications
+                        document.querySelector('.search-filter-container').scrollIntoView({ 
+                            behavior: 'smooth', 
+                            block: 'start' 
+                        });
+                    }
+                }
+            });
+
+            // Filter and search function
+            function filterAndSearch() {
+                let totalVisible = 0;
+                
+                publicationSections.forEach(section => {
+                    const sectionYear = section.getAttribute('data-year');
+                    const items = section.querySelectorAll('.publication-item');
+                    let hasVisibleItems = false;
+
+                    items.forEach(item => {
+                        const title = item.querySelector('.pub-title').textContent.toLowerCase();
+                        const authors = item.querySelector('.pub-authors').textContent.toLowerCase();
+                        const venue = item.querySelector('.pub-venue').textContent.toLowerCase();
+                        const tags = item.getAttribute('data-tags') || '';
+                        
+                        // Check year filter (combine all selected years with OR)
+                        const yearMatch = selectedYears.size === 0 || selectedYears.has('all') || 
+                                         (selectedYears.has('2021') ? 
+                                          parseInt(sectionYear) <= 2021 : 
+                                          selectedYears.has(sectionYear));
+                        
+                        // Check tag filter (combine all selected tags with OR)
+                        const tagMatch = selectedTags.size === 0 || selectedTags.has('all') || 
+                                        Array.from(selectedTags).some(tag => tags.includes(tag));
+                        
+                        // Check search term
+                        const searchMatch = searchTerm === '' || 
+                                          title.includes(searchTerm) || 
+                                          authors.includes(searchTerm) || 
+                                          venue.includes(searchTerm);
+                        
+                        // Show/hide item
+                        if (yearMatch && tagMatch && searchMatch) {
+                            item.style.display = '';
+                            hasVisibleItems = true;
+                            totalVisible++;
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+
+                    // Show/hide section based on visible items
+                    section.style.display = hasVisibleItems ? '' : 'none';
+                });
+
+                // Show/hide no results message
+                const noResults = document.getElementById('noResults');
+                noResults.style.display = totalVisible === 0 ? 'block' : 'none';
+            }
+
+            // Calculate and display publication counts based on current filters
+            function updateCounts() {
+                // Count all publications first
+                let allPublications = [];
+                publicationSections.forEach(section => {
+                    const year = section.getAttribute('data-year');
+                    const items = section.querySelectorAll('.publication-item');
+                    items.forEach(item => {
+                        allPublications.push({
+                            year: year,
+                            tags: (item.getAttribute('data-tags') || '').split(','),
+                            title: item.querySelector('.pub-title').textContent.toLowerCase(),
+                            authors: item.querySelector('.pub-authors').textContent.toLowerCase(),
+                            venue: item.querySelector('.pub-venue').textContent.toLowerCase()
+                        });
+                    });
+                });
+                
+                // Apply search filter to get matching publications
+                let filteredPubs = allPublications;
+                if (searchTerm) {
+                    filteredPubs = allPublications.filter(pub => 
+                        pub.title.includes(searchTerm) || 
+                        pub.authors.includes(searchTerm) || 
+                        pub.venue.includes(searchTerm)
+                    );
+                }
+                
+                // Apply year filter to get year-matched publications
+                let yearFilteredPubs = filteredPubs;
+                if (selectedYears.size > 0 && !selectedYears.has('all')) {
+                    yearFilteredPubs = filteredPubs.filter(pub => {
+                        if (selectedYears.has('2021')) {
+                            return parseInt(pub.year) <= 2021;
+                        }
+                        return selectedYears.has(pub.year);
+                    });
+                }
+                
+                // Apply tag filter to get tag-matched publications
+                let tagFilteredPubs = filteredPubs;
+                if (selectedTags.size > 0 && !selectedTags.has('all')) {
+                    tagFilteredPubs = filteredPubs.filter(pub => 
+                        Array.from(selectedTags).some(tag => pub.tags.includes(tag))
+                    );
+                }
+                
+                // Count by year (based on search + tag filters)
+                const yearCounts = {};
+                tagFilteredPubs.forEach(pub => {
+                    yearCounts[pub.year] = (yearCounts[pub.year] || 0) + 1;
+                });
+                
+                // Update year filter buttons with counts
+                document.getElementById('count-all-years').textContent = tagFilteredPubs.length;
+                document.querySelectorAll('[data-year-count]').forEach(btn => {
+                    const year = btn.getAttribute('data-year-count');
+                    const count = yearCounts[year] || 0;
+                    btn.textContent = count;
+                    // Hide count if 0
+                    btn.style.display = count > 0 ? 'inline-block' : 'none';
+                });
+                
+                // Count by tag (based on search + year filters)
+                const tagCounts = {};
+                yearFilteredPubs.forEach(pub => {
+                    pub.tags.forEach(tag => {
+                        if (tag) {
+                            tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+                        }
+                    });
+                });
+                
+                // Update tag filter buttons with counts
+                document.getElementById('count-all-tags').textContent = yearFilteredPubs.length;
+                document.querySelectorAll('[data-tag-count]').forEach(btn => {
+                    const tag = btn.getAttribute('data-tag-count');
+                    const count = tagCounts[tag] || 0;
+                    btn.textContent = count;
+                    // Hide count if 0
+                    btn.style.display = count > 0 ? 'inline-block' : 'none';
+                });
+                
+                // Sort topic buttons by count (descending)
+                sortTopicButtonsByCount(tagCounts);
+            }
+            
+            // Sort topic filter buttons based on count
+            function sortTopicButtonsByCount(tagCounts) {
+                const topicFiltersContainer = document.getElementById('topic-filters');
+                const allTopicsButton = topicFiltersContainer.querySelector('[data-tag="all"]');
+                const topicButtons = Array.from(topicFiltersContainer.querySelectorAll('[data-tag]:not([data-tag="all"])'));
+                
+                // Sort buttons by count (descending)
+                topicButtons.sort((a, b) => {
+                    const tagA = a.getAttribute('data-tag');
+                    const tagB = b.getAttribute('data-tag');
+                    const countA = tagCounts[tagA] || 0;
+                    const countB = tagCounts[tagB] || 0;
+                    return countB - countA;
+                });
+                
+                // Reorder buttons in DOM
+                topicButtons.forEach(button => {
+                    topicFiltersContainer.appendChild(button);
+                });
+                
+                // Keep "All Topics" button first
+                topicFiltersContainer.insertBefore(allTopicsButton, topicFiltersContainer.firstChild);
+            }
+            
+            updateCounts();
+        });
+    </script>
 </body>
 </html>
