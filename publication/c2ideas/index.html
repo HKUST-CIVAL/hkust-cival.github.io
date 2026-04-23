@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" /><!--屏幕自适应-->
+    <link rel="stylesheet" type="text/css" href="file/index.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <header>
+        <title>C2Ideas</title>
+
+        <style type="text/css">
+            body {
+                font-family: Arial, Verdana, Helvetica, sans-serif
+            }
+
+            p {
+                float: left;
+                display: block;
+                font-size: 16px;
+                text-align: justify;
+            }
+            .interface {
+                width: 90%;
+            }
+
+            .container {
+                width: 960px;
+                margin: 0 auto;
+                text-align: left;
+                padding: 1em 2em 2em 2em;
+            }
+        </style>
+    </header>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row row-1">
+            <div class="text-center">
+                <span class="title-mv">C2Ideas: Supporting Creative Interior Color Design Ideation with a Large Language Model</span>
+                </br></br>
+                <span class="journal-mv"> Proceedings of ACM CHI Conference on Human Factors in Computing Systems (CHI 2024)
+                    </br> </span>
+                </br>
+                <span class="authors-mv">
+                    <a href="http://yihanhou.work/home/">Yihan Hou</a><sup>1</sup>, &nbsp &nbsp 
+                    Manling Yang<sup>1</sup>, &nbsp &nbsp 
+                    Hao Cui<sup>1</sup>, &nbsp &nbsp 
+                    Lei Wang<sup>3</sup>, &nbsp &nbsp 
+                    Jie Xue<sup>3</sup>, &nbsp &nbsp 
+                    <a href="https://zeng-wei.com">Wei Zeng</a><sup>1, 2</sup>
+                    </br>
+                    <sup>1</sup>HKUST (GZ) &nbsp;&nbsp;&nbsp;&nbsp;
+                    <sup>2</sup>HKUST &nbsp;&nbsp;&nbsp;&nbsp;
+                    <sup>3</sup>China Academy of Art
+                </span>
+
+                </br></br>
+                <div id="learn-more">
+                    <p style="text-align: center;">
+                        <img class="interface" src="file/framework.png" alt="framework">
+                    </p>
+                    <p class="sub-title-mv">Abstract:</p>
+                    <p class="content">
+                        Interior color design is a creative process that endeavors to allocate colors to furniture and other elements within an interior space. While much research focuses on generating realistic interior designs, these automated approaches often misalign with user intention and disregard design rationales. Informed by a need-finding preliminary study, we develop C2Ideas, an innovative system for designers to creatively ideate color schemes enabled by an intentaligned and domain-oriented large language model. C2Ideas integrates a three-stage process: Idea Prompting stage distills user intentions into color linguistic prompts; Word-Color Association stage transforms the prompts into semantically and stylistically coherent color schemes; and Interior Coloring stage assigns colors to interior elements complying with design principles. We also develop an interactive interface that enables flexible user refinement and interpretable reasoning. C2Ideas has undergone a series of indoor cases and user studies, demonstrating its effectiveness and high recognition of interactive functionality by designers.
+                    </p>
+                </div>
+
+                <p class="learn-more">
+                    [<a href="https://arxiv.org/abs/2401.12586">Paper</a>]
+                </p>
+            </div>
+        </div>
+
+        <div class="row row-2">
+            <div style="width: 100%;height: 35px">
+                <p class="sub-title-mv" style="color:#337AB7; font-size: 28px">Video</p>
+            </div>
+            <video id="example_video_1" controls preload="none" width="750" height="422" poster="file/interface.png">
+                <source src="file/chi24a-sub5510-cam-i74.mp4" type="video/mp4">
+            </video>
+        </div>
+
+
+    </div>
+
+</body>
