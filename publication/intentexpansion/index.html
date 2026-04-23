@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Contemporary Art of Image Search: Iterative User Intent Expansion via Vision-Language Model</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root{--primary:#1a56db;--primary-hover:#1e40af;--bg:#fff;--bg-secondary:#f8fafc;--text:#1e293b;--text-secondary:#475569;--text-muted:#94a3b8;--border:#e2e8f0;--code-bg:#f1f5f9;--shadow-sm:0 1px 2px rgba(0,0,0,.05);--shadow-md:0 4px 6px -1px rgba(0,0,0,.07),0 2px 4px -2px rgba(0,0,0,.05);--radius:8px}
+        *{box-sizing:border-box}
+        body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:var(--text);background:var(--bg-secondary);line-height:1.7;margin:0;padding:0;-webkit-font-smoothing:antialiased}
+        .page-header{background:var(--bg);border-bottom:1px solid var(--border);padding:48px 0 40px;text-align:center}
+        .paper-title{font-size:26px;font-weight:700;color:var(--text);line-height:1.3;max-width:800px;margin:0 auto 16px;letter-spacing:-.3px}
+        .venue{font-size:15px;color:var(--primary);font-weight:500;margin-bottom:20px}
+        .authors{font-size:14px;color:var(--text-secondary);max-width:800px;margin:0 auto 8px;line-height:1.8}
+        .authors a{color:var(--text);text-decoration:none;font-weight:500;border-bottom:1px solid transparent;transition:border-color .2s}
+        .authors a:hover{border-bottom-color:var(--primary)}
+        .affiliations{font-size:13px;color:var(--text-muted);margin-top:4px}
+        .affiliations sup{color:var(--primary);font-weight:600}
+        .container-main{max-width:820px;margin:0 auto;padding:32px 24px 60px}
+        .section{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:32px;margin-bottom:24px;box-shadow:var(--shadow-sm)}
+        .section-title{font-size:15px;font-weight:600;color:var(--text);text-transform:uppercase;letter-spacing:.5px;margin:0 0 16px;padding-bottom:10px;border-bottom:2px solid var(--primary);display:inline-block}
+        .abstract-text{font-size:15px;color:var(--text-secondary);line-height:1.8;text-align:justify}
+        .teaser-img{width:100%;max-width:760px;border-radius:var(--radius);box-shadow:var(--shadow-md)}
+        .center-img{text-align:center}
+        .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
+        .link-btn{display:inline-flex;align-items:center;gap:6px;padding:8px 18px;background:var(--primary);color:#fff!important;text-decoration:none;border-radius:6px;font-size:13px;font-weight:500;transition:background .2s,transform .1s}
+        .link-btn:hover{background:var(--primary-hover);color:#fff!important;transform:translateY(-1px)}
+        .link-btn svg{width:14px;height:14px}
+        video{width:100%;max-width:760px;border-radius:var(--radius);box-shadow:var(--shadow-md)}
+        .bibtex-block{position:relative;background:var(--code-bg);border:1px solid var(--border);border-radius:6px;padding:16px 20px;margin-top:12px;overflow-x:auto}
+        .bibtex-block pre{margin:0;font-family:'SF Mono','Fira Code',Consolas,monospace;font-size:12.5px;line-height:1.6;color:var(--text);white-space:pre-wrap;word-wrap:break-word}
+        .copy-btn{position:absolute;top:8px;right:8px;background:var(--primary);color:#fff;border:none;padding:5px 12px;border-radius:4px;cursor:pointer;font-size:12px;font-weight:500;font-family:inherit;transition:background .2s;display:inline-flex;align-items:center;gap:4px}
+        .copy-btn:hover{background:var(--primary-hover)}
+        .cite-note{font-size:14px;color:var(--text-secondary);margin-bottom:4px}
+        @media(max-width:768px){.paper-title{font-size:20px}.section{padding:20px}.container-main{padding:20px 16px 40px}}
+    </style>
+</head>
+<body>
+<div class="page-header">
+    <div style="max-width:820px;margin:0 auto;padding:0 24px;">
+        <h1 class="paper-title">The Contemporary Art of Image Search: Iterative User Intent Expansion via Vision-Language Model</h1>
+        <div class="venue">Proceedings of ACM SIGCHI Conference on Computer-Supported Cooperative Work and Social Computing (CSCW 2024)</div>
+        <div class="authors"><a href="https://yilinye.github.io/">Yilin Ye</a><sup>1</sup>,&nbsp;&nbsp;<a href="https://zhuqian.org/">Qian Zhu</a><sup>2</sup>,&nbsp;&nbsp;<a href="https://serendipitysx.github.io/">Shishi Xiao</a><sup>1</sup>,&nbsp;&nbsp;Kang Zhang<sup>2</sup>,&nbsp;&nbsp;<a href="https://zeng-wei.com">Wei Zeng</a><sup>1, 2</sup></div>
+        <div class="affiliations"><sup>1</sup>HKUST (GZ)&nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup>HKUST</div>
+    </div>
+</div>
+<div class="container-main">
+    
+    
+    <div class="section center-img">
+        <img class="teaser-img" src="file/intentexpansion_teaser.png" alt="Teaser figure">
+    </div>
+    <div class="section">
+        <div class="section-title">Abstract</div>
+        <p class="abstract-text">Image search is an essential and user-friendly method to explore vast galleries of digital images. However, existing image search methods heavily rely on proximity measurements like tag matching or image similarity, requiring precise user inputs for satisfactory results. To meet the growing demand for a contemporary image search engine that enables accurate comprehension of users' search intentions, we introduce an innovative user intent expansion framework. Our framework leverages visual-language models to parse and compose multimodal user inputs to provide more accurate and satisfying results. It comprises two-stage processes: 1) a parsing stage that incorporates a language parsing module with large language models to enhance the comprehension of textual inputs, along with a visual parsing module that integrates an interactive segmentation module to swiftly identify detailed visual elements within images; and 2) a logic composition stage that combines multiple search intents into a unified logic expression for more sophisticated operations in complex searching scenarios. Moreover, the intent expansion framework enables users to perform flexible contextualized interactions with the search results to further specify or adjust their detailed search intents iteratively. We implemented the framework into an image search system for NFT (non-fungible token) search and conducted a user study to evaluate its usability and novel properties. The results indicate that the proposed framework significantly improves users' image search experience. Particularly the parsing and contextualized interactions prove useful in allowing users to express their search intents more accurately and engage in a more enjoyable iterative search experience.</p>
+    </div>
+    
+    <div class="section">
+        <div class="section-title">Video</div>
+        <video controls preload="none" poster="file/case.png">
+            <source src="file/intentexpansion_video.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="section">
+        <div class="section-title">Resources</div>
+        <div class="links">
+                <a class="link-btn" href="https://arxiv.org/abs/2312.01656"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Paper</a>
+        </div>
+    </div>
+    <div class="section">
+        <div class="section-title">BibTeX</div>
+        <p class="cite-note">If you find this paper useful, please consider citing it.</p>
+        <div class="bibtex-block">
+            <button class="copy-btn" onclick="copyBibtex('bibtex-intentexp')">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                <span id="bibtex-intentexp-btn-text">Copy</span>
+            </button>
+            <pre id="bibtex-intentexp">@article{ye2024intentexpansion,
+    author = {Ye, Yilin and Zhu, Qian and Xiao, Shishi and Zhang, Kang and Zeng, Wei},
+    title = {The Contemporary Art of Image Search: Iterative User Intent Expansion via Vision-Language Model},
+    journal = {Proceedings of the ACM on Human-Computer Interaction},
+    volume = {8},
+    number = {CSCW1},
+    articleno = {180},
+    numpages = {31},
+    year = {2024},
+    doi = {10.1145/3641019}
+}</pre>
+        </div>
+    </div>
+</div>
+<script>
+function copyBibtex(id){var e=document.getElementById(id),b=document.getElementById(id+"-btn-text");navigator.clipboard.writeText(e.textContent).then(function(){b.textContent="Copied!";setTimeout(function(){b.textContent="Copy"},2e3)}).catch(function(){var t=document.createElement("textarea");t.value=e.textContent;document.body.appendChild(t);t.select();document.execCommand("copy");document.body.removeChild(t);b.textContent="Copied!";setTimeout(function(){b.textContent="Copy"},2e3)})}
+</script>
+</body>
+</html>
