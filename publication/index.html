@@ -36,16 +36,7 @@
                 <input type="text" id="searchInput" placeholder="Search publications..." />
             </div>
             <div class="filter-buttons">
-                <div class="filter-group">
-                    <button class="filter-btn" data-year="all">All Years <span class="filter-count" id="count-all-years"></span></button>
-                    <button class="filter-btn" data-year="2026">2026 <span class="filter-count" data-year-count="2026"></span></button>
-                    <button class="filter-btn" data-year="2025">2025 <span class="filter-count" data-year-count="2025"></span></button>
-                    <button class="filter-btn" data-year="2024">2024 <span class="filter-count" data-year-count="2024"></span></button>
-                    <button class="filter-btn" data-year="2023">2023 <span class="filter-count" data-year-count="2023"></span></button>
-                    <button class="filter-btn" data-year="2022">2022 <span class="filter-count" data-year-count="2022"></span></button>
-                    <button class="filter-btn" data-year="2021">Older <span class="filter-count" data-year-count="2021"></span></button>
-                </div>
-                <div class="filter-group" style="margin-top: 15px;" id="topic-filters">
+                <div class="filter-group" id="topic-filters">
                     <button class="filter-btn" data-tag="all">All Topics <span class="filter-count" id="count-all-tags"></span></button>
                     <button class="filter-btn" data-tag="visualization">Visualization <span class="filter-count" data-tag-count="visualization"></span></button>
                     <button class="filter-btn" data-tag="visual-computing">Visual Computing <span class="filter-count" data-tag-count="visual-computing"></span></button>
@@ -534,52 +525,12 @@
         // Search and Filter functionality
         document.addEventListener('DOMContentLoaded', function() {
             const searchInput = document.getElementById('searchInput');
-            const yearFilterButtons = document.querySelectorAll('[data-year]');
             const tagFilterButtons = document.querySelectorAll('[data-tag]');
             const publicationSections = document.querySelectorAll('.publication-section');
             const publicationItems = document.querySelectorAll('.publication-item');
 
-            let selectedYears = new Set();
             let selectedTags = new Set();
             let searchTerm = '';
-
-            // Handle year filter clicks (toggle)
-            yearFilterButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    const year = this.getAttribute('data-year');
-                    
-                    if (year === 'all') {
-                        // Toggle all years
-                        if (selectedYears.has('all')) {
-                            selectedYears.clear();
-                        } else {
-                            selectedYears.clear();
-                            selectedYears.add('all');
-                        }
-                    } else {
-                        // Toggle specific year
-                        selectedYears.delete('all');
-                        if (selectedYears.has(year)) {
-                            selectedYears.delete(year);
-                        } else {
-                            selectedYears.add(year);
-                        }
-                    }
-                    
-                    // Update button states
-                    yearFilterButtons.forEach(btn => {
-                        const btnYear = btn.getAttribute('data-year');
-                        if (selectedYears.has(btnYear)) {
-                            btn.classList.add('active');
-                        } else {
-                            btn.classList.remove('active');
-                        }
-                    });
-                    
-                    filterAndSearch();
-                    updateCounts();
-                });
-            });
 
             // Handle tag filter clicks (toggle)
             tagFilterButtons.forEach(button => {
@@ -726,11 +677,7 @@
                 });
                 
                 // Update year filter buttons
-                document.getElementById('count-all-years').textContent = totalPublications;
-                document.querySelectorAll('[data-year-count]').forEach(btn => {
-                    const year = btn.getAttribute('data-year-count');
-                    btn.textContent = yearCounts[year] || 0;
-                });
+
                 
                 // Count by tag
                 const tagCounts = {};
@@ -766,15 +713,8 @@
                             }
                         });
                         
-                        // Reset year filter to all
-                        yearFilterButtons.forEach(btn => {
-                            btn.classList.remove('active');
-                            if (btn.getAttribute('data-year') === 'all') {
-                                btn.classList.add('active');
-                            }
-                        });
-                        currentYear = 'all';
-                        currentTag = tag;
+                        selectedTags.clear();
+                        selectedTags.add(tag);
                         
                         // Apply filter
                         filterAndSearch();
@@ -803,12 +743,6 @@
                         const venue = item.querySelector('.pub-venue').textContent.toLowerCase();
                         const tags = item.getAttribute('data-tags') || '';
                         
-                        // Check year filter (combine all selected years with OR)
-                        const yearMatch = selectedYears.size === 0 || selectedYears.has('all') || 
-                                         (selectedYears.has('2021') ? 
-                                          parseInt(sectionYear) <= 2021 : 
-                                          selectedYears.has(sectionYear));
-                        
                         // Check tag filter (combine all selected tags with OR)
                         const tagMatch = selectedTags.size === 0 || selectedTags.has('all') || 
                                         Array.from(selectedTags).some(tag => tags.includes(tag));
@@ -820,7 +754,7 @@
                                           venue.includes(searchTerm);
                         
                         // Show/hide item
-                        if (yearMatch && tagMatch && searchMatch) {
+                        if (tagMatch && searchMatch) {
                             item.style.display = '';
                             hasVisibleItems = true;
                             totalVisible++;
@@ -866,17 +800,6 @@
                     );
                 }
                 
-                // Apply year filter to get year-matched publications
-                let yearFilteredPubs = filteredPubs;
-                if (selectedYears.size > 0 && !selectedYears.has('all')) {
-                    yearFilteredPubs = filteredPubs.filter(pub => {
-                        if (selectedYears.has('2021')) {
-                            return parseInt(pub.year) <= 2021;
-                        }
-                        return selectedYears.has(pub.year);
-                    });
-                }
-                
                 // Apply tag filter to get tag-matched publications
                 let tagFilteredPubs = filteredPubs;
                 if (selectedTags.size > 0 && !selectedTags.has('all')) {
@@ -885,25 +808,9 @@
                     );
                 }
                 
-                // Count by year (based on search + tag filters)
-                const yearCounts = {};
-                tagFilteredPubs.forEach(pub => {
-                    yearCounts[pub.year] = (yearCounts[pub.year] || 0) + 1;
-                });
-                
-                // Update year filter buttons with counts
-                document.getElementById('count-all-years').textContent = tagFilteredPubs.length;
-                document.querySelectorAll('[data-year-count]').forEach(btn => {
-                    const year = btn.getAttribute('data-year-count');
-                    const count = yearCounts[year] || 0;
-                    btn.textContent = count;
-                    // Hide count if 0
-                    btn.style.display = count > 0 ? 'inline-block' : 'none';
-                });
-                
-                // Count by tag (based on search + year filters)
+                // Count by tag (based on search filter)
                 const tagCounts = {};
-                yearFilteredPubs.forEach(pub => {
+                filteredPubs.forEach(pub => {
                     pub.tags.forEach(tag => {
                         if (tag) {
                             tagCounts[tag] = (tagCounts[tag] || 0) + 1;
