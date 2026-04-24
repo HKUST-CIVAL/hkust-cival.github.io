@@ -1,0 +1,310 @@
+[
+  {
+    "page": 1,
+    "index": 1,
+    "file": "p001_fig1.png",
+    "size": [
+      548,
+      202
+    ],
+    "caption": "",
+    "confidence": 1.0
+  },
+  {
+    "page": 1,
+    "index": 2,
+    "file": "p001_fig2.png",
+    "size": [
+      548,
+      201
+    ],
+    "caption": "",
+    "confidence": 1.0
+  },
+  {
+    "page": 1,
+    "index": 3,
+    "file": "p001_fig3.png",
+    "size": [
+      548,
+      202
+    ],
+    "caption": "",
+    "confidence": 1.0
+  },
+  {
+    "page": 1,
+    "index": 4,
+    "file": "p001_fig4.png",
+    "size": [
+      548,
+      201
+    ],
+    "caption": "",
+    "confidence": 1.0
+  },
+  {
+    "page": 1,
+    "index": 5,
+    "file": "p001_fig5.png",
+    "size": [
+      548,
+      202
+    ],
+    "caption": "",
+    "confidence": 1.0
+  },
+  {
+    "page": 1,
+    "index": 6,
+    "file": "p001_fig6.png",
+    "size": [
+      548,
+      201
+    ],
+    "caption": "",
+    "confidence": 1.0
+  },
+  {
+    "page": 1,
+    "index": 7,
+    "file": "p001_fig7.png",
+    "size": [
+      548,
+      126
+    ],
+    "caption": "",
+    "confidence": 1.0
+  },
+  {
+    "page": 2,
+    "index": 1,
+    "file": "p002_fig1.png",
+    "size": [
+      1019,
+      242
+    ],
+    "caption": "",
+    "confidence": 1.0
+  },
+  {
+    "page": 5,
+    "index": 1,
+    "file": "p005_fig1.png",
+    "size": [
+      1029,
+      385
+    ],
+    "caption": "",
+    "confidence": 1.0
+  },
+  {
+    "page": 5,
+    "index": 2,
+    "file": "p005_fig2.png",
+    "size": [
+      495,
+      420
+    ],
+    "caption": "",
+    "confidence": 1.0
+  },
+  {
+    "page": 6,
+    "index": 1,
+    "file": "p006_fig1.png",
+    "size": [
+      1024,
+      289
+    ],
+    "caption": "",
+    "confidence": 1.0
+  },
+  {
+    "page": 6,
+    "index": 2,
+    "file": "p006_fig2.png",
+    "size": [
+      527,
+      286
+    ],
+    "caption": "",
+    "confidence": 1.0
+  },
+  {
+    "page": 7,
+    "index": 1,
+    "file": "p007_fig1.png",
+    "size": [
+      1039,
+      281
+    ],
+    "caption": "",
+    "confidence": 1.0
+  },
+  {
+    "page": 8,
+    "index": 1,
+    "file": "p008_fig1.png",
+    "size": [
+      834,
+      459
+    ],
+    "caption": "",
+    "confidence": 1.0
+  },
+  {
+    "page": 9,
+    "index": 1,
+    "file": "p009_fig1.png",
+    "size": [
+      1027,
+      383
+    ],
+    "caption": "",
+    "confidence": 1.0
+  },
+  {
+    "page": 9,
+    "index": 2,
+    "file": "p009_fig2.png",
+    "size": [
+      295,
+      225
+    ],
+    "caption": "",
+    "confidence": 1.0
+  },
+  {
+    "page": 10,
+    "index": 1,
+    "file": "p010_fig1.png",
+    "size": [
+      1030,
+      555
+    ],
+    "caption": "",
+    "confidence": 1.0
+  },
+  {
+    "page": 11,
+    "index": 1,
+    "file": "p011_fig1.png",
+    "size": [
+      1035,
+      411
+    ],
+    "caption": "",
+    "confidence": 1.0
+  },
+  {
+    "page": 11,
+    "index": 2,
+    "file": "p011_fig2.png",
+    "size": [
+      1035,
+      663
+    ],
+    "caption": "",
+    "confidence": 1.0
+  },
+  {
+    "page": 13,
+    "index": 1,
+    "file": "p013_fig1.png",
+    "size": [
+      539,
+      333
+    ],
+    "caption": "",
+    "confidence": 1.0
+  },
+  {
+    "page": 14,
+    "index": 1,
+    "file": "p014_fig1.png",
+    "size": [
+      175,
+      197
+    ],
+    "caption": "",
+    "confidence": 1.0
+  },
+  {
+    "page": 15,
+    "index": 1,
+    "file": "p015_fig1.png",
+    "size": [
+      476,
+      239
+    ],
+    "caption": "",
+    "confidence": 1.0
+  },
+  {
+    "page": 17,
+    "index": 1,
+    "file": "p017_fig1.png",
+    "size": [
+      174,
+      210
+    ],
+    "caption": "",
+    "confidence": 1.0
+  },
+  {
+    "page": 17,
+    "index": 2,
+    "file": "p017_fig2.png",
+    "size": [
+      174,
+      209
+    ],
+    "caption": "",
+    "confidence": 1.0
+  },
+  {
+    "page": 17,
+    "index": 3,
+    "file": "p017_fig3.png",
+    "size": [
+      174,
+      210
+    ],
+    "caption": "",
+    "confidence": 1.0
+  },
+  {
+    "page": 17,
+    "index": 4,
+    "file": "p017_fig4.png",
+    "size": [
+      174,
+      210
+    ],
+    "caption": "",
+    "confidence": 1.0
+  },
+  {
+    "page": 17,
+    "index": 5,
+    "file": "p017_fig5.png",
+    "size": [
+      174,
+      210
+    ],
+    "caption": "",
+    "confidence": 1.0
+  },
+  {
+    "page": 17,
+    "index": 6,
+    "file": "p017_fig6.png",
+    "size": [
+      177,
+      210
+    ],
+    "caption": "",
+    "confidence": 1.0
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "page": 1,
+    "index": 1,
+    "file": "p001_fig1.png",
+    "size": [
+      935,
+      368
+    ],
+    "caption": "",
+    "confidence": 1.0
+  },
+  {
+    "page": 2,
+    "index": 1,
+    "file": "p002_fig1.png",
+    "size": [
+      445,
+      261
+    ],
+    "caption": "",
+    "confidence": 1.0
+  },
+  {
+    "page": 5,
+    "index": 1,
+    "file": "p005_fig1.png",
+    "size": [
+      472,
+      379
+    ],
+    "caption": "",
+    "confidence": 1.0
+  },
+  {
+    "page": 6,
+    "index": 1,
+    "file": "p006_fig1.png",
+    "size": [
+      470,
+      464
+    ],
+    "caption": "",
+    "confidence": 1.0
+  }
+]
