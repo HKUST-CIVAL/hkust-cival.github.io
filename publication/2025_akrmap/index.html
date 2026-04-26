@@ -40,9 +40,51 @@
 <div class="container-main">
 
     <div class="section">
-        <div class="section-title">Abstract</div>
-        <p class="abstract-text">Emerging multimodal large language models (MLLMs) exhibit great potential for chart question answering (CQA). Recent efforts primarily focus on scaling up training datasets (i.e., charts, data tables, and question-answer (QA) pairs) through data collection and synthesis. However, our empirical study on existing MLLMs and CQA datasets reveals notable gaps. First, current data collection and synthesis focus on data volume and lack consideration of fine-grained visual encodings and QA tasks, resulting in unbalanced data distribution divergent from practical CQA scenarios. Second, existing work follows the training recipe of the base MLLMs initially designed for natural images, under-exploring the adaptation to unique chart characteristics, such as rich text elements. To fill the gap, we propose a visualization-referenced instruction tuning approach to guide the training dataset enhancement and model development. Specifically, we propose a novel data engine to effectively filter diverse and high-quality data from existing datasets and subsequently refine and augment the data using LLM-based generation techniques to better align with practical QA tasks and visual encodings. Then, to facilitate the adaptation to chart characteristics, we utilize the enriched data to train an MLLM by unfreezing the vision encoder and incorporating a mixture-of-resolution adaptation strategy for enhanced fine-grained recognition. Experimental results validate the effectiveness of our approach. Even with fewer training examples, our model consistently outperforms state-of-the-art CQA models on established benchmarks. We also contribute a dataset split as a benchmark for future research. Source codes and datasets of this paper are available at https://github.com/zengxingchen/ChartQA-MLLM. Index Terms—Chart-question answering, multimodal large language models, benchmark</p>
+
+    <div class="section center-img">
+        <img class="teaser-img" src="assets/framework.png" alt="Teaser figure">
+        <div style="height: 36px;"></div>
+        <img class="teaser-img" src="assets/results.png" alt="Teaser figure">
     </div>
+
+        <div class="section-title">Abstract</div>
+        <p class="abstract-text">
+            Cross-modal embeddings form the foundation for multi-modal models. 
+            However, visualization methods for interpreting cross-modal embeddings have been primarily confined to traditional dimensionality reduction (DR) techniques like PCA and t-SNE. 
+These DR methods primarily focus on feature distributions within a single modality, whilst failing to incorporate metrics
+(e.g., CLIPScore) across multiple modalities.
+This paper introduces AKRMap, a new DR technique
+designed to visualize cross-modal embeddings
+metric with enhanced accuracy by learning
+kernel regression of the metric landscape in
+the projection space. Specifically, AKRMap constructs
+a supervised projection network guided
+by a post-projection kernel regression loss, and
+employs adaptive generalized kernels that can be
+jointly optimized with the projection. This approach
+enables AKRMap to efficiently generate
+visualizations that capture complex metric distributions,
+while also supporting interactive features
+such as zoom and overlay for deeper exploration.
+Quantitative experiments demonstrate
+that AKRMap outperforms existing DR methods
+in generating more accurate and trustworthy visualizations.
+We further showcase the effectiveness
+of AKRMap in visualizing and comparing
+cross-modal embeddings for text-to-image models.
+Code and demo are available at https:
+//github.com/yilinye/AKRMap.
+        </p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Links</div>
+        <div class="links">
+            <a class="link-btn" href="assets/paper.pdf">Paper</a>
+            <a class="link-btn" href="https://github.com/yilinye/AKRMap">Code</a>
+        </div>
+    </div>
+
     <div class="section">
         <div class="section-title">BibTeX</div>
         <p class="cite-note">If you find this paper useful, please consider citing it.</p>
