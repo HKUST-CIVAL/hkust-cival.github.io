@@ -34,30 +34,38 @@
 <div class="page-header">
     <div style="max-width:820px;margin:0 auto;padding:0 24px;">
         <h1 class="paper-title">VizTA: Enhancing Comprehension of Distributional Visualization with Visual-Lexical Fused Conversational Interface</h1>
-        <div class="venue">Computer Graphics Forum (Proc. EuroVis'25) , 44(3): e70110, 2025.</div>
+        <div class="venue">Computer Graphics Forum (Proc. EuroVis'25)</div>
         <div class="authors">Liangwei Wang, Zhan Wang, Shishi Xiao, Le Liu, Fugee Tsung, Wei Zeng*</div>
     </div>
 </div>
 <div class="container-main">
     <div class="section center-img">
-        <img class="teaser-img" src="teaser.png" alt="Teaser figure">
+        <img class="teaser-img" src="assets/teaser.png" alt="Teaser figure">
     </div>
     <div class="section">
         <div class="section-title">Abstract</div>
-        <p class="abstract-text">Map: Adaptive Kernel Regression for Trustworthy Visualization of |     |           |               | Cross-Modal |               | Embeddings     |            |     |           |     |     |     | | --- | --------- | ------------- | ----------- | ------------- | -------------- | ---------- | --- | --------- | --- | --- | --- | |     | YilinYe12 | JunchaoHuang3 |             | XingchenZeng1 |                | JiazhiXia4 |     | WeiZeng12 |     |     |     | |     | Abstract  |               |             |               | 1.Introduction |            |     |           |     |     |     | Cross-modalembeddingsplayafundamentalroleformulti- modalmodels,functioningascross-modalencoders(Rom- | Cross-modal | embeddings | form | the foundation |     |     |     |     |     |     |     |     | | ----------- | ---------- | ---- | -------------- | --- | --- | --- | --- | --- | --- | --- | --- | bachetal.,2022),objectivefunctions(Rameshetal.,2022), | for multi-modal | models. | However, |     | visualiza- |     |     |     |     |     |     |     | | --------------- | ------- | -------- | --- | ---------- | --- | --- | --- | --- | --- | --- | --- | orevaluationmetrics(Hesseletal.,2021;Wuetal.,2023a) | tion methods | for interpreting |     | cross-modal | em- |     |     |     |     |     |     |     | | ------------ | ---------------- | --- | ----------- | --- | --- | --- | --- | --- | --- | --- | --- | fortasksliketext-to-image(T2I)generation(Peebles&Xie, | beddings | have been primarily</p>
+        <p class="abstract-text">
+            Comprehending visualizations requires readers to interpret visual encoding and the underlying meanings actively. This poses
+challenges for visualization novices, particularly when interpreting distributional visualizations that depict statistical uncertainty.
+Advancements in LLM-based conversational interfaces show promise in promoting visualization comprehension. However,
+they fail to provide contextual explanations at fine-grained granularity, and chart readers are still required to mentally
+bridge visual information and textual explanations during conversations. Our formative study highlights the expectations for
+both lexical and visual feedback, as well as the importance of explicitly linking these two modalities throughout the conversation.
+The findings motivate the design of VIZTA, a visualization teaching assistant that leverages the fusion of visual and lexical
+feedback to help readers better comprehend visualization. VIZTA features a semantic-aware conversational agent capable of
+explaining contextual information within visualizations and employs a visual-lexical fusion design to facilitate chart-centered
+conversation. A between-subject study with 24 participants demonstrates the effectiveness of VIZTA in supporting the understanding
+and reasoning tasks of distributional visualization across multiple scenarios.
+        </p>
     </div>
     <div class="section">
         <div class="section-title">Links</div>
         <div class="links">
             <a class="link-btn" href="assets/paper.pdf">Paper</a>
-            <a class="link-btn" href="../../publication/index.html">← Back to Publications</a>
         </div>
     </div>
-</div>
-<script>
-function copyBibtex(id){{var e=document.getElementById(id),b=document.getElementById(id+"-btn-text");navigator.clipboard.writeText(e.textContent).then(function(){{b.textContent="Copied!";setTimeout(function(){{b.textContent="Copy"}},2e3)}}).catch(function(){{var t=document.createElement("textarea");t.value=e.textContent;document.body.appendChild(t);t.select();document.execCommand("copy");document.body.removeChild(t);b.textContent="Copied!";setTimeout(function(){{b.textContent="Copy"}},2e3)}})}}
-</script>
 
+    
     <div class="section">
         <div class="section-title">BibTeX</div>
         <p class="cite-note">If you find this paper useful, please consider citing it.</p>
@@ -76,5 +84,10 @@ function copyBibtex(id){{var e=document.getElementById(id),b=document.getElement
 }</pre>
         </div>
     </div>
+</div>
+<script>
+function copyBibtex(id){{var e=document.getElementById(id),b=document.getElementById(id+"-btn-text");navigator.clipboard.writeText(e.textContent).then(function(){{b.textContent="Copied!";setTimeout(function(){{b.textContent="Copy"}},2e3)}}).catch(function(){{var t=document.createElement("textarea");t.value=e.textContent;document.body.appendChild(t);t.select();document.execCommand("copy");document.body.removeChild(t);b.textContent="Copied!";setTimeout(function(){{b.textContent="Copy"}},2e3)}})}}
+</script>
+
 </body>
 </html>
