@@ -11,6 +11,8 @@
 .pub-links a:hover { text-decoration: underline; }
 .link-icon { font-size: 12px; flex-shrink: 0; }
 .homepage-icon { color: #1a56db; }
+.filter-count { display: inline-block; background: #e2e8f0; color: #475569; font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 12px; margin-left: 6px; min-width: 20px; text-align: center; }
+.filter-btn.active .filter-count { background: rgba(255,255,255,0.3); color: #fff; }
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -771,7 +773,7 @@ tagCounts[tag] = (tagCounts[tag] || 0) + 1;
 });
 });
 // Update tag filter buttons with counts
-document.getElementById('count-all-tags').textContent = yearFilteredPubs.length;
+document.getElementById('count-all-tags').textContent = filteredPubs.length;
 document.querySelectorAll('[data-tag-count]').forEach(btn => {
 const tag = btn.getAttribute('data-tag-count');
 const count = tagCounts[tag] || 0;
