@@ -68,11 +68,8 @@ understanding of ICH contextual storytelling when visiting CH, and it generates 
             <a class="link-btn" href="assets/paper.pdf">Paper</a>
         </div>
     </div>
-</div>
-<script>
-function copyBibtex(id){{var e=document.getElementById(id),b=document.getElementById(id+"-btn-text");navigator.clipboard.writeText(e.textContent).then(function(){{b.textContent="Copied!";setTimeout(function(){{b.textContent="Copy"}},2e3)}}).catch(function(){{var t=document.createElement("textarea");t.value=e.textContent;document.body.appendChild(t);t.select();document.execCommand("copy");document.body.removeChild(t);b.textContent="Copied!";setTimeout(function(){{b.textContent="Copy"}},2e3)}})}}
-</script>
 
+    
     <div class="section">
         <div class="section-title">BibTeX</div>
         <p class="cite-note">If you find this paper useful, please consider citing it.</p>
@@ -93,5 +90,10 @@ function copyBibtex(id){{var e=document.getElementById(id),b=document.getElement
 }</pre>
         </div>
     </div>
+</div>
+<script>
+function copyBibtex(id){{var e=document.getElementById(id),b=document.getElementById(id+"-btn-text");navigator.clipboard.writeText(e.textContent).then(function(){{b.textContent="Copied!";setTimeout(function(){{b.textContent="Copy"}},2e3)}}).catch(function(){{var t=document.createElement("textarea");t.value=e.textContent;document.body.appendChild(t);t.select();document.execCommand("copy");document.body.removeChild(t);b.textContent="Copied!";setTimeout(function(){{b.textContent="Copy"}},2e3)}})}}
+</script>
+
 </body>
 </html>
