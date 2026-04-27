@@ -34,30 +34,52 @@
 <div class="page-header">
     <div style="max-width:820px;margin:0 auto;padding:0 24px;">
         <h1 class="paper-title">Dashboard Vision: Using Eye-Tracking to Understand and Predict Dashboard Viewing Behaviors</h1>
-        <div class="venue">IEEE Transactions on Visualization and Computer Graphics, 31(10): 6930 - 6945, 2025.</div>
+        <div class="venue">IEEE Transactions on Visualization and Computer Graphics</div>
         <div class="authors">Manling Yang, Yihan Hou, Ling Li, Remco Chang, Wei Zeng*</div>
     </div>
 </div>
 <div class="container-main">
     <div class="section center-img">
-        <img class="teaser-img" src="teaser.png" alt="Teaser figure">
+        <img class="teaser-img" src="assets/framework.png" alt="Teaser figure">
+        <div style="height: 36px;"></div>
+        <img class="teaser-img" src="assets/result1.png" alt="Teaser figure">
+        <div style="height: 36px;"></div>
+        <img class="teaser-img" src="assets/result2.png" alt="Teaser figure">
     </div>
     <div class="section">
         <div class="section-title">Abstract</div>
-        <p class="abstract-text">This work was supported in part by the National Natural Science Foundation of China under Grant 62172398, in part by the Guangzhou Basic and Applied Basic Research Foundation under Grant 2024A04J6462, and in part by the National Science Foundation under Grant OAC-2118201 and Grant NRT-2021874. Rec- ommended for acceptance by E. D. Ragan. (Corresponding author: Wei Zeng.) This work involved human subjects or animals in its research. Approval of all ethical and experimental procedures and protocols was granted by Committee on Research Practices, HKUST (GZ) under Application No. HKUST(GZ)-HSP- 2024-0005 and performed in line with the Declaration of Helsinki. Manling Yang, Yihan Hou, and Ling Li are with the Hong Kong University of Science and Technology (Guangzhou), Guangzhou 511370, China (e-mail: myang838@connect.hkust-gz.edu.cn; yhou073@connect.hkust-gz.edu.cn; lli297@connect.hkust-gz.edu.cn). Remco Chang is with Tufts University, Medford, MA 02155 USA (e-mail: remco.chang@tufts.edu). Wei Zeng is with the Hong Kong University of Science and Technology (Guangzhou), Guangzhou 511370, China, and also with the Hong Kong Univer- sity of Science and Technology, Clear Water Bay, Hong Kong, China (e-mail: weizeng@hkust-gz.edu.cn). This article has supplementary downloadable material available at https://doi.org/10.1109/TVCG.2025.3532497, provided by the authors. Digital Object Identiﬁer 10.1109/TVCG.2025.3532497 I. INTRODUCTION</p>
+        <p class="abstract-text">Dashboards serve as effective visualization tools for
+conveying complex information. However, there exists a knowledge
+gap regarding how dashboard designs impact user engagement,
+necessitating designers to rely on their design expertise. Saliency
+has been used to comprehend viewing behaviors and assess visualizations,
+yet existing saliency models are primarily designed
+for single-view visualizations. To address this, we conduct an
+eye-tracking study to quantify participants’ viewing patterns on
+dashboards. We collect eye-movement data from 60 participants,
+each viewing 36 dashboards (16 representative dashboards shared
+across all and 20 unique to each participant), totaling 1,216 dashboards
+and 2,160 eye-movement data instances. Aalysis of the data
+from 16 dashboards viewed by all participants provides insights
+into how dashboard objects and layout designs influence viewing
+behaviors. Our analysis confirms known viewing patterns and
+reveals new patterns related to dashboard layout designs. Using the
+eye-movement data and identified patterns, we develop a saliency
+model to predict viewing behaviors with dashboards. Compared
+to state-of-the-art models for single-view visualizations, our model
+demonstrates overall improvement in prediction performance for
+dashboards. Finally, we propose potential dashboard design guidelines,
+illustrate an application case, and discuss general scanning
+strategies along with limitations and future work.
     </div>
     <div class="section">
         <div class="section-title">Links</div>
         <div class="links">
             <a class="link-btn" href="assets/paper.pdf">Paper</a>
-            <a class="link-btn" href="../../publication/index.html">← Back to Publications</a>
+            <a class="link-btn" href="https://osf.io/eyvda/">Code</a>
         </div>
     </div>
-</div>
-<script>
-function copyBibtex(id){{var e=document.getElementById(id),b=document.getElementById(id+"-btn-text");navigator.clipboard.writeText(e.textContent).then(function(){{b.textContent="Copied!";setTimeout(function(){{b.textContent="Copy"}},2e3)}}).catch(function(){{var t=document.createElement("textarea");t.value=e.textContent;document.body.appendChild(t);t.select();document.execCommand("copy");document.body.removeChild(t);b.textContent="Copied!";setTimeout(function(){{b.textContent="Copy"}},2e3)}})}}
-</script>
-
+    
     <div class="section">
         <div class="section-title">BibTeX</div>
         <p class="cite-note">If you find this paper useful, please consider citing it.</p>
@@ -71,11 +93,17 @@ function copyBibtex(id){{var e=document.getElementById(id),b=document.getElement
     title = {{Dashboard Vision: Using Eye-Tracking to Understand and Predict Dashboard Viewing Behaviors}},
     journal = {IEEE Transactions on Visualization and Computer Graphics},
     volume = {31},
+    number = {10},
     pages = {6930--6945},
     year = {2025},
     doi = {10.1109/TVCG.2025.3532497},
 }</pre>
         </div>
     </div>
+</div>
+<script>
+function copyBibtex(id){{var e=document.getElementById(id),b=document.getElementById(id+"-btn-text");navigator.clipboard.writeText(e.textContent).then(function(){{b.textContent="Copied!";setTimeout(function(){{b.textContent="Copy"}},2e3)}}).catch(function(){{var t=document.createElement("textarea");t.value=e.textContent;document.body.appendChild(t);t.select();document.execCommand("copy");document.body.removeChild(t);b.textContent="Copied!";setTimeout(function(){{b.textContent="Copy"}},2e3)}})}}
+</script>
+
 </body>
 </html>
