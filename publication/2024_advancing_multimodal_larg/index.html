@@ -33,18 +33,44 @@
 <div class="page-header">
     <div style="max-width:820px;margin:0 auto;padding:0 24px;">
         <h1 class="paper-title">Advancing Multimodal Large Language Models in Chart Question Answering with Visualization-Referenced Instruction Tuning</h1>
-        <div class="venue">IEEE Transactions on Visualization and Computer Graphics (Proc. IEEE VIS 2024), 31(1): 525 - 535, 2025.</div>
+        <div class="venue">IEEE Transactions on Visualization and Computer Graphics (Proc. IEEE VIS 2024)</div>
         <div class="authors">Xingchen Zeng, Haichuan Lin, Yilin Ye, Wei Zeng</div>
     </div>
 </div>
 <div class="container-main">
     <div class="section center-img">
-        <img class="teaser-img" src="teaser.png" alt="Teaser figure">
+        <img class="teaser-img" src="assets/framework.png" alt="Teaser figure">
+        <div style="height: 36px;"></div>
+        <img class="teaser-img" src="assets/result.png" alt="Teaser figure">
     </div>
     <div class="section">
         <div class="section-title">Abstract</div>
-        <p class="abstract-text">Visual |             |     | Analytics |     |     | for | | --------- | --- | --- | ----------- | --- | -------------- | --- | ----------- | --- | ------ | ----------- | --- | --------- | --- | --- | --- | |           | Bus |     | Operational |     |                |     | Uncertainty |     |        | EXploration |     |           |     |     |     | Shishi Xiao , Qing Shi , Lingdan Shao, Bo Du , Yang Wang , Qiaomu Shen , Member, IEEE, |     |     |     |     |     |     | and | Wei Zeng | , Member, | IEEE |     |     |     |     |     |     | | --- | --- | --- | --- | --- | --- | --- | -------- | --------- | ---- | --- | --- | --- | --- | --- | --- | traveloption.Thebussystemisacommonlyusedtravelmode | Abstract—In |     | the public | transportation |     |     | system, | punctuality |     |     |     |     |     |     |     |     | | ----------- | --- | ---------- | -------------- | --- | --- | ------- | ----------- | --- | --- | --- | --- | --- | --- | --- | --- | benefits both bus operation and passengers’ travel experience. in multi-modal public transit systems [1], [2]. However, bus However, uncertainty exists due to complex traffic conditions operation is volatile due to the dense bus network and mixed | and heterogeneous |     | driving | behaviors. |     | To  | analyze | bus opera- |     |     |     |     |     |     |     |     | | ----------------- | --- | ------- | ---------- | --- | --- | ------- | ---------- | --- | --- | --- | --- | --- | --- | --- | --- | </p>
+        <p class="abstract-text">
+            Emerging multimodal large language models (MLLMs) exhibit great potential for chart question answering (CQA). Recent
+efforts primarily focus on scaling up training datasets (i.e., charts, data tables, and question-answer (QA) pairs) through data collection
+and synthesis. However, our empirical study on existing MLLMs and CQA datasets reveals notable gaps. First, current data collection
+and synthesis focus on data volume and lack consideration of fine-grained visual encodings and QA tasks, resulting in unbalanced
+data distribution divergent from practical CQA scenarios. Second, existing work follows the training recipe of the base MLLMs initially
+designed for natural images, under-exploring the adaptation to unique chart characteristics, such as rich text elements. To fill the gap,
+we propose a visualization-referenced instruction tuning approach to guide the training dataset enhancement and model development.
+Specifically, we propose a novel data engine to effectively filter diverse and high-quality data from existing datasets and subsequently
+refine and augment the data using LLM-based generation techniques to better align with practical QA tasks and visual encodings.
+Then, to facilitate the adaptation to chart characteristics, we utilize the enriched data to train an MLLM by unfreezing the vision encoder
+and incorporating a mixture-of-resolution adaptation strategy for enhanced fine-grained recognition. Experimental results validate the
+effectiveness of our approach. Even with fewer training examples, our model consistently outperforms state-of-the-art CQA models on
+established benchmarks. We also contribute a dataset split as a benchmark for future research. Source codes and datasets of this
+paper are available at https://github.com/zengxingchen/ChartQA-MLLM.
+        </p>
     </div>
+
+    <div class="section">
+        <div class="section-title">Links</div>
+        <div class="links">
+            <a class="link-btn" href="assets/paper.pdf">Paper</a>
+            <a class="link-btn" href="https://github.com/zengxingchen/ChartQA-MLLM">Code</a>
+        </div>
+    </div>
+
     <div class="section">
         <div class="section-title">BibTeX</div>
         <p class="cite-note">If you find this paper useful, please consider citing it.</p>
@@ -58,6 +84,7 @@
     title = {{Advancing Multimodal Large Language Models in Chart Question Answering with Visualization-Referenced Instruction Tuning}},
     journal = {IEEE Transactions on Visualization and Computer Graphics},
     volume = {31},
+    number = {1},
     pages = {525--535},
     year = {2024},
     doi = {10.1109/TVCG.2024.3456159},
