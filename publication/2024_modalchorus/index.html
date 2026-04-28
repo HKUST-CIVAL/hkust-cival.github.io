@@ -33,18 +33,40 @@
 <div class="page-header">
     <div style="max-width:820px;margin:0 auto;padding:0 24px;">
         <h1 class="paper-title">ModalChorus: Visual Probing and Alignment of Multi-modal Embeddings via Modal Fusion Map</h1>
-        <div class="venue">IEEE Transactions on Visualization and Computer Graphics (Proc. IEEE VIS 2024), 31(1): 294 - 304, 2025.</div>
+        <div class="venue">IEEE Transactions on Visualization and Computer Graphics (Proc. IEEE VIS 2024)</div>
         <div class="authors">Yilin Ye, Shishi Xiao, Xingchen Zeng, Wei Zeng</div>
     </div>
 </div>
 <div class="container-main">
     <div class="section center-img">
-        <img class="teaser-img" src="teaser.png" alt="Teaser figure">
+        <img class="teaser-img" src="assets/framework.png" alt="Teaser figure">
+        <div style="height: 36px;"></div>
+        <img class="teaser-img" src="assets/teaser.png" alt="Teaser figure">
+        <div style="height: 36px;"></div>
+        <img class="teaser-img" src="assets/result2.png" alt="Teaser figure">
     </div>
     <div class="section">
         <div class="section-title">Abstract</div>
-        <p class="abstract-text">Map View for presenting the spatial distribution of uncertainty, bus bunching and optimize the operation schedule. Neverthe- Temporal View for tracking the evolution of uncertainty, and less,complextrafficconditionsposeamultitudeofdifficulties | Trip View | for | inspecting | uncertainty |     | propagation. |     | Specifically, |     |     |     |     |     |     |     |     | | --------- | --- | ---------- | ----------- | --- | ------------ | --- | ------------- | --- | --- | --- | --- | --- | --- | --- | --- | intheanalyticsofbusoperationaldata.First,thephenomenon | MetroBUX | enables | integrated |     | spatio-temporal |     | analysis | by con- |     |     |     |     |     |     |     |     | | -------- | ------- | ---------- | --- | --------------- | --- | -------- | ------- | --- | --- | --- | --- | --- | --- | --- | --- | ofbusbunchingisobservedtobestochasticintherealworld. | necting topological |     | uncertainty |     | distribution |     | at different | periods |     |     |     |     |     |     |     |     | | ------------------- | --- | ----------- | --- | ------------ | --- | ------------ | ------- | --- | --- | --- | --- | --- | --- | --- | --- | in a nested tracking graph. Furthermore, it supports interactive Ideally, bus operation shall follow the planned timetable or andhierarchicalexploration,includingregion-,route-,trip-,and schedule,i.e.,punctuality.However,unforeseencircumstances stop-level analysis. Case studies on real-world bus operational liket</p>
+        <p class="abstract-text">Multi-modal embeddings form the foundation for vision-language models, such as CLIP embeddings, the most widely
+used text-image embeddings. However, these embeddings are vulnerable to subtle misalignment of cross-modal features, resulting in
+decreased model performance and diminished generalization. To address this problem, we design ModalChorus, an interactive system
+for visual probing and alignment of multi-modal embeddings. ModalChorus primarily offers a two-stage process: 1) embedding probing
+with Modal Fusion Map (MFM), a novel parametric dimensionality reduction method that integrates both metric and nonmetric objectives
+to enhance modality fusion; and 2) embedding alignment that allows users to interactively articulate intentions for both point-set and
+set-set alignments. Quantitative and qualitative comparisons for CLIP embeddings with existing dimensionality reduction (e.g., t-SNE
+and MDS) and data fusion (e.g., data context map) methods demonstrate the advantages of MFM in showcasing cross-modal features
+over common vision-language datasets. Case studies reveal that ModalChorus can facilitate intuitive discovery of misalignment and
+efficient re-alignment in scenarios ranging from zero-shot classification to cross-modal retrieval and generation.</p>
     </div>
+
+    <div class="section">
+        <div class="section-title">Links</div>
+        <div class="links">
+            <a class="link-btn" href="assets/paper.pdf">Paper</a>
+            <a class="link-btn" href="https://github.com/yilinye/Modal-Fusion-Map">Code</a>
+        </div>
+    </div>
+
     <div class="section">
         <div class="section-title">BibTeX</div>
         <p class="cite-note">If you find this paper useful, please consider citing it.</p>
@@ -58,6 +80,7 @@
     title = {{ModalChorus: Visual Probing and Alignment of Multi-modal Embeddings via Modal Fusion Map}},
     journal = {IEEE Transactions on Visualization and Computer Graphics},
     volume = {31},
+    number = {1},
     pages = {294--304},
     year = {2024},
     doi = {10.1109/TVCG.2024.3456387},
