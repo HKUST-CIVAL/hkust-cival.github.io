@@ -33,18 +33,35 @@
 <div class="page-header">
     <div style="max-width:820px;margin:0 auto;padding:0 24px;">
         <h1 class="paper-title">GeoReasoner: Geo-localization with Reasoning in Street Views using a Large Vision-Language Model</h1>
-        <div class="venue">Proceedings of The International Conference on Machine Learning (ICML'24), Pages 29222-29233, 2024.</div>
+        <div class="venue">Proceedings of The International Conference on Machine Learning (ICML'24)</div>
         <div class="authors">Ling Li, Yu Ye, Binchuan Jiang, Wei Zeng</div>
     </div>
 </div>
 <div class="container-main">
     <div class="section center-img">
-        <img class="teaser-img" src="teaser.png" alt="Teaser figure">
+        <img class="teaser-img" src="assets/framework.png" alt="Framework figure">
+        <div style="height: 36px;"></div>
+        <img class="teaser-img" src="assets/result.png" alt="Result figure">
     </div>
     <div class="section">
         <div class="section-title">Abstract</div>
-        <p class="abstract-text">This work tackles the problem of geo-localization with a new paradigm using a large vision- language model (LVLM) augmented with human inference knowledge. A primary challenge here is the scarcity of data for training the LVLM - existing street-view datasets often contain numer- ous low-quality images lacking visual clues, and lack any reasoning inference. To address the data- quality issue, we devise a CLIP-based network to quantify the degree of street-view images being locatable, leading to the creation of a new dataset comprising highly locatable street views. To en- hance reasoning inference, we integrate external knowledge obtained from real geo-localization games, tapping into valuable human inference capabilities. The data are utilized to train GeoRe- asoner, which undergoes fine-tuning through ded- icated reasoning and location-tuning stages. Qual- itative and quantitative evaluations illustrate that GeoReasoner outperforms counterpart LVLMs by more than 25% at country-level and 38% at city- level geo-localization tasks, and surpasses Street- CLIP performance while requiring fewer training resources. The data and code are available at https://github.com/lingli1996/GeoReasoner. 1. Introduction Street-view geo-localization seeks to predict geographical locations for the given street-view images. The significance of street-view geo-localization is evident in a variety of ap- plications, spanning social studies (Ye et al., 2019b), urban planning (Shen et al., 2018), and navigation (Chalvatzaras 1The Hong Kong University of Science and Technology (Guangzhou) 2Tongji University 3Strategic Support Force Infor- mation Engineering University 4The Hong Kong University of Science and Technology. Correspondence to: Bingchuan Jiang <jbc021@163.com>. Proceedings of the 41 st International Conference on Machine Learning, Vienna, Austria. PMLR 235, 2024. Copyright 2024 by the author(s). Retrieval-based approaches [ lat, lon ] [ lat, lon ] Output [ lat, lon ] [ lat, lon ] [</p>
+        <p class="abstract-text">This work tackles the problem of geo-localization with a new paradigm using a large vision-language model (LVLM) augmented with human inference knowledge. 
+            A primary challenge here is the scarcity of data for training the LVLM - existing street-view datasets often contain numerous low-quality images lacking visual clues, and lack any reasoning inference. 
+            To address the data-quality issue, we devise a CLIP-based network to quantify the degree of street-view images being locatable, leading to the creation of a new dataset comprising highly locatable street views.
+            To enhance reasoning inference, we integrate external knowledge obtained from real geo-localization games, tapping into valuable human inference capabilities. 
+            The data are utilized to train GeoReasoner, which undergoes fine-tuning through ded- icated reasoning and location-tuning stages. 
+            Qualitative and quantitative evaluations illustrate that GeoReasoner outperforms counterpart LVLMs by more than 25% at country-level and 38% at city-level geo-localization tasks, and surpasses Street-CLIP performance while requiring fewer training resources. 
+            The data and code are available at https://github.com/lingli1996/GeoReasoner. </p>
     </div>
+
+    <div class="section">
+        <div class="section-title">Links</div>
+        <div class="links">
+            <a class="link-btn" href="assets/paper.pdf">Paper</a>
+            <a class="link-btn" href="https://github.com/lingli1996/GeoReasoner">Code</a>
+        </div>
+    </div>
+
     <div class="section">
         <div class="section-title">BibTeX</div>
         <p class="cite-note">If you find this paper useful, please consider citing it.</p>
