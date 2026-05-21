@@ -28,35 +28,52 @@
         .copy-btn{position:absolute;top:8px;right:8px;background:var(--primary);color:#fff;border:none;padding:5px 12px;border-radius:4px;cursor:pointer;font-size:12px;font-weight:500;font-family:inherit;transition:background .2s;display:inline-flex;align-items:center;gap:4px}
         .copy-btn:hover{background:var(--primary-hover)}
         .cite-note{font-size:14px;color:var(--text-secondary);margin-bottom:4px}
+        video{width:100%;max-width:760px;border-radius:var(--radius);box-shadow:var(--shadow-md)}
     </style>
 </head>
 <body>
 <div class="page-header">
     <div style="max-width:820px;margin:0 auto;padding:0 24px;">
         <h1 class="paper-title">MetroBUX: A Topology-based Visual Analytics for Bus Operational Uncertainty EXploration</h1>
-        <div class="venue">IEEE Transactions on Intelligent Transportation Systems, vol. 25, no. 6, pp. 5525-5538, 2024.</div>
+        <div class="venue">IEEE Transactions on Intelligent Transportation Systems</div>
         <div class="authors">Shishi Xiao, Qing Shi, Lingdan Shao, Bo Du, Yang Wang, Qiaomu Shen, Wei Zeng*</div>
     </div>
 </div>
 <div class="container-main">
     <div class="section center-img">
-        <img class="teaser-img" src="teaser.png" alt="Teaser figure">
+        <img class="teaser-img" src="assets/teaser.png" alt="Teaser figure">
+        <div style="height: 36px;"></div>
+        <img class="teaser-img" src="assets/result1.png" alt="Result figure">
+        <div style="height: 36px;"></div>
+        <img class="teaser-img" src="assets/result2.png" alt="Result figure">
     </div>
     <div class="section">
         <div class="section-title">Abstract</div>
-        <p class="abstract-text">Map View for presenting the spatial distribution of uncertainty, bus bunching and optimize the operation schedule. Neverthe- Temporal View for tracking the evolution of uncertainty, and less,complextrafficconditionsposeamultitudeofdifficulties | Trip View | for | inspecting | uncertainty |     | propagation. |     | Specifically, |     |     |     |     |     |     |     |     | | --------- | --- | ---------- | ----------- | --- | ------------ | --- | ------------- | --- | --- | --- | --- | --- | --- | --- | --- | intheanalyticsofbusoperationaldata.First,thephenomenon | MetroBUX | enables | integrated |     | spatio-temporal |     | analysis | by con- |     |     |     |     |     |     |     |     | | -------- | ------- | ---------- | --- | --------------- | --- | -------- | ------- | --- | --- | --- | --- | --- | --- | --- | --- | ofbusbunchingisobservedtobestochasticintherealworld. | necting topological |     | uncertainty |     | distribution |     | at different | periods |     |     |     |     |     |     |     |     | | ------------------- | --- | ----------- | --- | ------------ | --- | ------------ | ------- | --- | --- | --- | --- | --- | --- | --- | --- | in a nested tracking graph. Furthermore, it supports interactive Ideally, bus operation shall follow the planned timetable or andhierarchicalexploration,includingregion-,route-,trip-,and schedule,i.e.,punctuality.However,unforeseencircumstances stop-level analysis. Case studies on real-world bus operational liket</p>
+        <p class="abstract-text">In the public transportation system, punctuality benefits both bus operation and passengers' travel experience.
+However, uncertainty exists due to complex traffic conditions and heterogeneous driving behaviors.
+To analyze bus operational uncertainty, transport planners and bus operators need a tool that supports multi-granular modeling, spatio-temporal representation, and interactive exploration.
+To meet the requirement, we present MetroBUX, a visual analytics system for Bus operational Uncertainty eXploration.
+MetroBUX aligns daily bus trips and models stop-level uncertainty of bus arrival time.
+It has a consolidated interface with three main views: Map View for presenting the spatial distribution of uncertainty, Temporal View for tracking the evolution of uncertainty, and Trip View for inspecting uncertainty propagation.
+Specifically, MetroBUX enables integrated spatio-temporal analysis by connecting topological uncertainty distribution at different periods in a nested tracking graph.
+Furthermore, it supports interactive and hierarchical exploration, including region-, route-, trip-, and stop-level analysis.
+Case studies on real-world bus operational data and domain experts' feedback demonstrate the efficiency of MetroBUX.</p>
     </div>
     <div class="section">
         <div class="section-title">Links</div>
         <div class="links">
             <a class="link-btn" href="assets/paper.pdf">Paper</a>
-            <a class="link-btn" href="../../publication/index.html">← Back to Publications</a>
         </div>
     </div>
-</div>
-<script>
-function copyBibtex(id){{var e=document.getElementById(id),b=document.getElementById(id+"-btn-text");navigator.clipboard.writeText(e.textContent).then(function(){{b.textContent="Copied!";setTimeout(function(){{b.textContent="Copy"}},2e3)}}).catch(function(){{var t=document.createElement("textarea");t.value=e.textContent;document.body.appendChild(t);t.select();document.execCommand("copy");document.body.removeChild(t);b.textContent="Copied!";setTimeout(function(){{b.textContent="Copy"}},2e3)}})}}
-</script>
+
+
+    <div class="section">
+        <div class="section-title">Video</div>
+        <video controls preload="none" poster="assets/teaser.png">
+            <source src="assets/video.mp4" type="video/mp4">
+        </video>
+    </div>
+
 
     <div class="section">
         <div class="section-title">BibTeX</div>
@@ -77,5 +94,9 @@ function copyBibtex(id){{var e=document.getElementById(id),b=document.getElement
 }</pre>
         </div>
     </div>
+</div>
+<script>
+function copyBibtex(id){{var e=document.getElementById(id),b=document.getElementById(id+"-btn-text");navigator.clipboard.writeText(e.textContent).then(function(){{b.textContent="Copied!";setTimeout(function(){{b.textContent="Copy"}},2e3)}}).catch(function(){{var t=document.createElement("textarea");t.value=e.textContent;document.body.appendChild(t);t.select();document.execCommand("copy");document.body.removeChild(t);b.textContent="Copied!";setTimeout(function(){{b.textContent="Copy"}},2e3)}})}}
+</script>
 </body>
 </html>
