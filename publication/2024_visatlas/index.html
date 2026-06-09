@@ -18,6 +18,10 @@
         .authors a:hover{border-bottom-color:var(--primary)}
         .affiliations{font-size:13px;color:var(--text-muted);margin-top:4px}
         .affiliations sup{color:var(--primary);font-weight:600}
+                .header-links{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:16px}
+        .header-link{display:inline-flex;align-items:center;gap:5px;padding:6px 16px;border:none;border-radius:20px;font-size:13px;font-weight:500;color:#fff;text-decoration:none;transition:all .2s;background:#64748b}
+        .header-link:hover{background:#475569;color:#fff}
+        .header-link svg{width:14px;height:14px;flex-shrink:0}
         .container-main{max-width:820px;margin:0 auto;padding:32px 24px 60px}
         .section{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:32px;margin-bottom:24px;box-shadow:var(--shadow-sm)}
         .section-title{font-size:15px;font-weight:600;color:var(--text);text-transform:uppercase;letter-spacing:.5px;margin:0 0 16px;padding-bottom:10px;border-bottom:2px solid var(--primary);display:inline-block}
@@ -43,16 +47,13 @@
         <h1 class="paper-title">VISAtlas: An Image-based Exploration and Query System for Large Visualization Collections via Neural Image Embedding</h1>
         <div class="venue">IEEE Transactions on Visualization and Computer Graphics</div>
         <div class="authors">Yilin Ye,&nbsp;&nbsp;Rong Huang,&nbsp;&nbsp;<a href="https://zeng-wei.com">Wei Zeng</a></div>
+            <div class="header-links">
+            <a class="header-link" href="assets/paper.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Paper</a>
+            <a class="header-link" href="https://github.com/yilinye/VisAtlas-Code"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>Code</a>
+        </div>
     </div>
 </div>
 <div class="container-main"><div class="section">
-        <div class="section-title">Resources</div>
-        <div class="links">
-            <a class="link-btn" href="assets/paper.pdf">Paper</a>                 
-             <a class="link-btn" href="https://github.com/yilinye/VisAtlas-Code">Code</a>
-         </div>
-    </div>
-    <div class="section">
         <div class="section-title">Abstract</div>
         <p class="abstract-text">High-quality visualization collections are beneficial for a variety of applications including visualization reference and data-driven visualization design.
 The visualization community has created many visualization collections, and developed interactive exploration systems for the collections.
@@ -63,30 +64,23 @@ Next, we design a coordinated multiple view (CMV) system that enables multi-pers
 Specifically, we design a novel embedding overview that leverages contextual layout framework to preserve the context of the embedding vectors with the associated visualization taxonomies, and density plot and sampling techniques to address the overdrawing problem.
 We demonstrate in three case studies and one user study the effectiveness of VISAtlas in supporting comparative analysis of visualization collections, exploration of composite visualizations, and image-based retrieval of visualization designs.
 The studies reveal that real-world visualization collections (e.g., Beagle and VIS30K) better accord with the richness and diversity of visualization designs than synthetic collections (e.g., Data2Vis), inspiring composite visualizations are identified in real-world collections, and distinct design patterns exist in visualizations from different sources.</p>
-</div>
-    
-    
-    
-    <div class="section center-img">
+</div><div class="section center-img">
         <img class="teaser-img" src="assets/interface.png" alt="Interfaces figure">
         <div style="height: 36px;"></div>
         <img class="teaser-img" src="assets/method.png" alt="Method figure">
         <div style="height: 36px;"></div>
         <img class="teaser-img" src="assets/result.png" alt="Result figure">
-    </div>
-
-    <div class="section">
+    </div><div class="section">
         <div class="section-title">Video</div>
         <video controls preload="none" poster="assets/poster.png">
             <source src="assets/video.mp4" type="video/mp4">
         </video>
-    </div>
-    <div class="section">
+    </div><div class="section">
         <div class="section-title">BibTeX</div>
         <p class="cite-note">If you find this paper useful, please consider citing it.</p>
         <div class="bibtex-block">
             <button class="copy-btn" onclick="copyBibtex('bibtex-visatlas')">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
                 <span id="bibtex-visatlas-btn-text">Copy</span>
             </button>
             <pre id="bibtex-visatlas">@article{ye2025visatlas,
@@ -101,7 +95,6 @@ The studies reveal that real-world visualization collections (e.g., Beagle and V
 }</pre>
         </div>
     </div>
-</div>
 <script>
 function copyBibtex(id){var e=document.getElementById(id),b=document.getElementById(id+"-btn-text");navigator.clipboard.writeText(e.textContent).then(function(){b.textContent="Copied!";setTimeout(function(){b.textContent="Copy"},2e3)}).catch(function(){var t=document.createElement("textarea");t.value=e.textContent;document.body.appendChild(t);t.select();document.execCommand("copy");document.body.removeChild(t);b.textContent="Copied!";setTimeout(function(){b.textContent="Copy"},2e3)})}
 </script>

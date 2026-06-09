@@ -12,6 +12,10 @@
         .paper-title{font-size:26px;font-weight:700;color:var(--text);line-height:1.3;max-width:800px;margin:0 auto 16px;letter-spacing:-.3px}
         .venue{font-size:15px;color:var(--primary);font-weight:500;margin-bottom:20px}
         .authors{font-size:14px;color:var(--text-secondary);max-width:800px;margin:0 auto 8px;line-height:1.8}
+                .header-links{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:16px}
+        .header-link{display:inline-flex;align-items:center;gap:5px;padding:6px 16px;border:none;border-radius:20px;font-size:13px;font-weight:500;color:#fff;text-decoration:none;transition:all .2s;background:#64748b}
+        .header-link:hover{background:#475569;color:#fff}
+        .header-link svg{width:14px;height:14px;flex-shrink:0}
         .container-main{max-width:820px;margin:0 auto;padding:32px 24px 60px}
         .section{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:32px;margin-bottom:24px;box-shadow:var(--shadow-sm)}
         .section-title{font-size:15px;font-weight:600;color:var(--text);text-transform:uppercase;letter-spacing:.5px;margin:0 0 16px;padding-bottom:10px;border-bottom:2px solid var(--primary);display:inline-block}
@@ -36,18 +40,12 @@
         <h1 class="paper-title">Introducing ManyViews: an AI-assisted tool to support citizens' engagement in the design of urban spaces</h1>
         <div class="venue">International Journal of Human - Computer Studies</div>
         <div class="authors">Rong Huang, Yihan Hou, Mela Bettega, Kang Zhang, Wei Zeng</div>
+            <div class="header-links">
+            <a class="header-link" href="assets/paper.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Paper</a>
+        </div>
     </div>
 </div>
 <div class="container-main"><div class="section">
-        <div class="section-title">Resources</div>
-        <div class="links">
-            <a class="link-btn" href="assets/paper.pdf">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Paper
-            </a>
-        </div>
-    </div>
-    
-    <div class="section">
         <div class="section-title">Abstract</div>
         <p class="abstract-text">Citizens' engagement in urban design often involves workshops where design proposals are presented to residents through professional drawings. 
             However, traditional analog methods can pose challenges for non-expert participants, particularly in terms of spatial visualization and effectively expressing their design ideas. 
@@ -55,23 +53,19 @@
             In response, we developed ManyViews, a tool designed to enhance the participatory design process by enabling the envisioning of design proposals and integrating diverse viewpoints from the community. 
             ManyViews incorporates a three-stage pipeline: view transformation generates consistent human-perspective renderings for locations in a masterplan with generative models; rendering edition enables user-friendly expression of design suggestions for the environment through cross-modal editing on human-perspective renderings; and viewpoint visualization traces and compiles the evolution of diverse designs from multiple participants with provenance visualization. 
             User studies demonstrate that ManyViews reduces communication barriers between non-experts and professionals, enhancing citizen engagement as collaborators in public open space co-design.</p>
-    </div>
-    
-    <div class="section center-img">
+    </div><div class="section center-img">
         <img class="teaser-img" src="assets/figure_1.png" alt="Teaser figure">
-    </div>
-    <div class="section center-img">
+    </div><div class="section">
         <div class="section-title">Video</div>
         <video controls preload="none" poster="assets/figure_2.png">
             <source src="assets/2026_manyviews.mp4" type="video/mp4">
         </video>
-    </div>
-    <div class="section">
+    </div><div class="section">
         <div class="section-title">BibTeX</div>
         <p class="cite-note">If you find this paper useful, please consider citing it.</p>
         <div class="bibtex-block">
             <button class="copy-btn" onclick="copyBibtex('bibtex-2026_introducing_manyviews')">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
                 <span id="bibtex-2026_introducing_manyviews-btn-text">Copy</span>
             </button>
             <pre id="bibtex-2026_introducing_manyviews">@article{huang2026introducing,
@@ -85,7 +79,6 @@
 }</pre>
         </div>
     </div>
-</div>
 <script>
 function copyBibtex(id){var e=document.getElementById(id),b=document.getElementById(id+"-btn-text");navigator.clipboard.writeText(e.textContent).then(function(){b.textContent="Copied!";setTimeout(function(){b.textContent="Copy"},2e3)}).catch(function(){var t=document.createElement("textarea");t.value=e.textContent;document.body.appendChild(t);t.select();document.execCommand("copy");document.body.removeChild(t);b.textContent="Copied!";setTimeout(function(){b.textContent="Copy"},2e3)})}
 </script>

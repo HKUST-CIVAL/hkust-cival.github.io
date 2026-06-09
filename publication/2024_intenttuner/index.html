@@ -18,6 +18,10 @@
         .authors a:hover{border-bottom-color:var(--primary)}
         .affiliations{font-size:13px;color:var(--text-muted);margin-top:4px}
         .affiliations sup{color:var(--primary);font-weight:600}
+                .header-links{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:16px}
+        .header-link{display:inline-flex;align-items:center;gap:5px;padding:6px 16px;border:none;border-radius:20px;font-size:13px;font-weight:500;color:#fff;text-decoration:none;transition:all .2s;background:#64748b}
+        .header-link:hover{background:#475569;color:#fff}
+        .header-link svg{width:14px;height:14px;flex-shrink:0}
         .container-main{max-width:820px;margin:0 auto;padding:32px 24px 60px}
         .section{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:32px;margin-bottom:24px;box-shadow:var(--shadow-sm)}
         .section-title{font-size:15px;font-weight:600;color:var(--text);text-transform:uppercase;letter-spacing:.5px;margin:0 0 16px;padding-bottom:10px;border-bottom:2px solid var(--primary);display:inline-block}
@@ -43,15 +47,12 @@
         <h1 class="paper-title">IntentTuner: An Interactive Framework for Integrating Human Intentions in Fine-tuning Text-to-Image Generative Models</h1>
         <div class="venue">Proceedings of ACM CHI Conference on Human Factors in Computing Systems (CHI 2024)</div>
         <div class="authors"><a href="https://zengxc1997.github.io/">Xingchen Zeng</a>,&nbsp;&nbsp;Ziyao Gao,&nbsp;&nbsp;<a href="https://yilinye.github.io/">Yilin Ye</a>,&nbsp;&nbsp;<a href="https://zeng-wei.com">Wei Zeng</a></div>
+            <div class="header-links">
+            <a class="header-link" href="assets/paper.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Paper</a>
+        </div>
     </div>
 </div>
 <div class="container-main"><div class="section">
-        <div class="section-title">Resources</div>
-        <div class="links">
-            <a class="link-btn" href="assets/paper.pdf">Paper</a>
-        </div>
-    </div>
-    <div class="section">
         <div class="section-title">Abstract</div>
         <p class="abstract-text">
             Fine-tuning facilitates the adaptation of text-to-image generative models to novel concepts (e.g., styles and portraits), empowering users to forge creatively customized content. 
@@ -61,28 +62,21 @@
             Furthermore, IntentTuner introduces novel metrics to measure user intent alignment, allowing intent-aware monitoring and evaluation of model training. 
             Application exemplars and user studies demonstrate that IntentTuner streamlines fine-tuning, reducing cognitive effort and yielding superior models compared to the common baseline tool.
         </p>
-    </div>
-    
-    
-    
-    
-    <div class="section center-img">
+    </div><div class="section center-img">
         <img class="teaser-img" src="assets/intenttuner_teaser.png" alt="Teaser figure">
         <div style="height: 36px;"></div>
         <img class="teaser-img" src="assets/intenttuner_poster.png" alt="Interface figure">
-    </div>
-    <div class="section">
+    </div><div class="section">
         <div class="section-title">Video</div>
         <video controls preload="none" poster="assets/intenttuner_poster.png">
             <source src="assets/intenttuner_video.mp4" type="video/mp4">
         </video>
-    </div>
-    <div class="section">
+    </div><div class="section">
         <div class="section-title">BibTeX</div>
         <p class="cite-note">If you find this paper useful, please consider citing it.</p>
         <div class="bibtex-block">
             <button class="copy-btn" onclick="copyBibtex('bibtex-intenttuner')">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
                 <span id="bibtex-intenttuner-btn-text">Copy</span>
             </button>
             <pre id="bibtex-intenttuner">@inproceedings{intenttuner24,
@@ -96,7 +90,6 @@
 }</pre>
         </div>
     </div>
-</div>
 <script>
 function copyBibtex(id){var e=document.getElementById(id),b=document.getElementById(id+"-btn-text");navigator.clipboard.writeText(e.textContent).then(function(){b.textContent="Copied!";setTimeout(function(){b.textContent="Copy"},2e3)}).catch(function(){var t=document.createElement("textarea");t.value=e.textContent;document.body.appendChild(t);t.select();document.execCommand("copy");document.body.removeChild(t);b.textContent="Copied!";setTimeout(function(){b.textContent="Copy"},2e3)})}
 </script>
