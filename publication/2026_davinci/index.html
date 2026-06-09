@@ -37,18 +37,7 @@
         <div class="authors">Xingchen Zeng, Zhewei Su, Hengming Zhang, Juyong Jiang, Jiazhi Xia, Wei Zeng</div>
     </div>
 </div>
-<div class="container-main">
-    <div class="section center-img">
-        <img class="teaser-img" src="assets/teaser.png" alt="Teaser figure">
-    </div>
-    <div class="section">
-        <div class="section-title">Abstract</div>
-        <p class="abstract-text">Parsing raster-based scientific diagrams into structured representations is critical for editability and reusability. However, existing multimodal LLMs (MLLMs) struggle with the diverse visual primitives, complex structural layouts, and strict syntax involved. To address this, we introduce DaVinci, a novel MLLM that learns diagram parsing based on a two-stage framework: supervised learning of visual primitives followed by reinforcement learning of their structural relationships. Our model learns visual-structural syntax through supervised training on TikZ30K, a newly curated dataset of high-quality diagram-TikZ code pairs that features abundant visual primitives and structurally optimized drawing sequences. We further refine the model via reinforcement learning, guided by a hybrid reward function that jointly optimizes for visual fidelity, structural consistency, and code correctness. Extensive experiments show that DaVinci significantly outperforms existing open-source MLLMs and surpasses leading proprietary models like GPT-5 and Claude-Sonnet-4. 
-            Code, datasets, and models are available at https://github.com/zengxingchen/Diagram-to-TikZCode.</p>
-    </div>
-
-    
-    <div class="section">
+<div class="container-main"><div class="section">
         <div class="section-title">Resources</div>
         <div class="links">
             <a class="link-btn" href="assets/paper.pdf">
@@ -61,6 +50,17 @@
         </div>
     </div>
 
+    <div class="section">
+        <div class="section-title">Abstract</div>
+        <p class="abstract-text">Parsing raster-based scientific diagrams into structured representations is critical for editability and reusability. However, existing multimodal LLMs (MLLMs) struggle with the diverse visual primitives, complex structural layouts, and strict syntax involved. To address this, we introduce DaVinci, a novel MLLM that learns diagram parsing based on a two-stage framework: supervised learning of visual primitives followed by reinforcement learning of their structural relationships. Our model learns visual-structural syntax through supervised training on TikZ30K, a newly curated dataset of high-quality diagram-TikZ code pairs that features abundant visual primitives and structurally optimized drawing sequences. We further refine the model via reinforcement learning, guided by a hybrid reward function that jointly optimizes for visual fidelity, structural consistency, and code correctness. Extensive experiments show that DaVinci significantly outperforms existing open-source MLLMs and surpasses leading proprietary models like GPT-5 and Claude-Sonnet-4. 
+            Code, datasets, and models are available at https://github.com/zengxingchen/Diagram-to-TikZCode.</p>
+    </div>
+
+    
+    
+    <div class="section center-img">
+        <img class="teaser-img" src="assets/teaser.png" alt="Teaser figure">
+    </div>
     <div class="section">
         <div class="section-title">BibTeX</div>
         <p class="cite-note">If you find this paper useful, please consider citing it.</p>
