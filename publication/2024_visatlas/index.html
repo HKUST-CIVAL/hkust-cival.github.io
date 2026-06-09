@@ -43,27 +43,43 @@
         <h1 class="paper-title">VISAtlas: An Image-based Exploration and Query System for Large Visualization Collections via Neural Image Embedding</h1>
         <div class="venue">IEEE Transactions on Visualization and Computer Graphics</div>
         <div class="authors">Yilin Ye,&nbsp;&nbsp;Rong Huang,&nbsp;&nbsp;<a href="https://zeng-wei.com">Wei Zeng</a></div>
-        <div class="affiliations">The Hong Kong University of Science and Technology (Guangzhou)</div>
     </div>
 </div>
 <div class="container-main">
     
+    <div class="section center-img">
+        <img class="teaser-img" src="assets/interface.png" alt="Interfaces figure">
+        <div style="height: 36px;"></div>
+        <img class="teaser-img" src="assets/method.png" alt="Method figure">
+        <div style="height: 36px;"></div>
+        <img class="teaser-img" src="assets/result.png" alt="Result figure">
+    </div>
+
     <div class="section">
         <div class="section-title">Abstract</div>
-        <p class="abstract-text">Visualization Conference (PacificVis) A-Map: Interactive Visual Exploration of Intercity Accessibility Dynamics |     |     | Based | on Railway | Network | Data |     |     | | --- | --- | ----- | ---------- | ------- | ---- | --- | --- | KaichenNie1* HanningShao1 † YuchuLuo1 ‡ MinTian1 § HaoWu1 ¶ WeiZeng3 || XinFu4 ** |     |     |     | XiaoruYuan1,2 | ††  |     |     |     | | --- | --- | --- | ------------- | --- | --- | --- | --- | 1KeyLaboratoryofMachinePerception(MinistryofEducation),SchoolofAI,PekingUniversity 04000.4202.47306siVcificaP/9011.01 :IOD | EEEI 4202© 00.13$/42/4-0839-3053-8-979 | )siVcificaP( ecnerefnoC noitazilausiV cificaP ht71 EEEI 4202 2NationalEngineeringLaboratoryforBigDataAnalysisandApplication,PekingUniversity 3HongKongUniversityofScienceandTechnology(Guangzhou) 4Chang’anUniversity (cid:127)€(cid:129)‚(cid:129)ƒ„ |     |     | (cid:127)€(cid:129)‚(cid:129)ƒ„ |     |     | (cid:127)€(cid:129)‚(cid:129)ƒ„ |     | (cid:127)€(cid:129)‚(cid:129)ƒ„ | | --- | --- | ------------------------------- | --- | --- | ------------------------------- | --- | ------------------------------- | (cid:127)€(cid:129)‚(cid:129)ƒ„ |     | …†‡ƒ„†‡(cid:129) |     |                  |                  |     |     | …†‡ƒ„†‡(cid:129) | | --- | ---------------- | --- | ---------------- | ---------------- | --- | --- | ---------------- | |     |                  |     | …†‡ƒ„†‡(cid:129) | …†‡ƒ„†‡(cid:129) |     |     |                  | …†‡ƒ„†‡(cid:129) ˆ‰‡ƒ„Š†‹‰ |      |     </p>
-    </div>
+        <p class="abstract-text">High-quality visualization collections are beneficial for a variety of applications including visualization reference and data-driven visualization design.
+The visualization community has created many visualization collections, and developed interactive exploration systems for the collections.
+However, the systems are mainly based on extrinsic attributes like authors and publication years, whilst neglect intrinsic property (i.e., visual appearance) of visualizations, hindering visual comparison and query of visualization designs.
+This paper presents VISAtlas, an image-based approach empowered by neural image embedding, to facilitate exploration and query for visualization collections.
+To improve embedding accuracy, we create a comprehensive collection of synthetic and real-world visualizations, and use it to train a convolutional neural network (CNN) model with a triplet loss for taxonomical classification of visualizations.
+Next, we design a coordinated multiple view (CMV) system that enables multi-perspective exploration and design retrieval based on visualization embeddings.
+Specifically, we design a novel embedding overview that leverages contextual layout framework to preserve the context of the embedding vectors with the associated visualization taxonomies, and density plot and sampling techniques to address the overdrawing problem.
+We demonstrate in three case studies and one user study the effectiveness of VISAtlas in supporting comparative analysis of visualization collections, exploration of composite visualizations, and image-based retrieval of visualization designs.
+The studies reveal that real-world visualization collections (e.g., Beagle and VIS30K) better accord with the richness and diversity of visualization designs than synthetic collections (e.g., Data2Vis), inspiring composite visualizations are identified in real-world collections, and distinct design patterns exist in visualizations from different sources.</p>
+</div>
     
     <div class="section">
         <div class="section-title">Video</div>
-        <video controls preload="none" poster="assets/visatlas_poster.png">
-            <source src="assets/visatlas_video.mp4" type="video/mp4">
+        <video controls preload="none" poster="assets/poster.png">
+            <source src="assets/video.mp4" type="video/mp4">
         </video>
     </div>
     <div class="section">
         <div class="section-title">Resources</div>
         <div class="links">
-                <a class="link-btn" href="assets/vis_atlas.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Paper</a>
-        </div>
+            <a class="link-btn" href="assets/paper.pdf">Paper</a>                 
+             <a class="link-btn" href="https://github.com/yilinye/VisAtlas-Code">Code</a>
+         </div>
     </div>
     <div class="section">
         <div class="section-title">BibTeX</div>
@@ -75,7 +91,7 @@
             </button>
             <pre id="bibtex-visatlas">@article{ye2025visatlas,
     author = {Ye, Yilin and Huang, Rong and Zeng, Wei},
-    title = {VISAtlas: An Image-based Exploration and Query System for Large Visualization Collections via Neural Image Embedding},
+    title = {{VISAtlas}: An Image-based Exploration and Query System for Large Visualization Collections via Neural Image Embedding},
     journal = {IEEE Transactions on Visualization and Computer Graphics},
     volume = {30},
     number = {7},

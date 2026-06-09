@@ -34,29 +34,37 @@
 <div class="page-header">
     <div style="max-width:820px;margin:0 auto;padding:0 24px;">
         <h1 class="paper-title">Generating Virtual Reality Stroke Gesture Data from Out-of-Distribution Desktop Stroke Gesture Data</h1>
-        <div class="venue">Proceedings of The IEEE Conference on Virtual Reality and 3D User Interfaces, 2024, pp. 732-742.</div>
+        <div class="venue">Proceedings of The IEEE Conference on Virtual Reality and 3D User Interfaces</div>
         <div class="authors">Linping Yuan, Boyu Li, Jindong Wang, Huamin Qu, Wei Zeng*</div>
     </div>
 </div>
 <div class="container-main">
     <div class="section center-img">
-        <img class="teaser-img" src="teaser.png" alt="Teaser figure">
+        <img class="teaser-img" src="assets/teaser.png" alt="Teaser figure">
+        <div style="height: 36px;"></div>
+        <img class="teaser-img" src="assets/result.png" alt="Teaser figure">
     </div>
     <div class="section">
         <div class="section-title">Abstract</div>
-        <p class="abstract-text">s of the Annual Symposium on Computer-Human Interaction in Play, pp. 171–176, 2022. [13] Y. Ganin, E. Ustinova, H. Ajakan, P. Germain, H. Larochelle, F. Laviolette, M. Marchand, and V. Lempitsky. Domain-adversarial training of neural networks. The Journal of Machine Learning Research, 17(1):2096–2030, 2016. [14] Y. Gryaditskaya, F. Hähnlein, C. Liu, A. Sheffer, and A. Bousseau. Lifting freehand concept sketches into 3D. ACM Transactions on Graphics, 39(6):1–16, 2020. [15] Y. Gryaditskaya, M. Sypesteyn, J. W. Hoftijzer, S. C. Pont, F. Durand, and A. Bousseau. OpenSketch: a richly-annotated dataset of product design sketches. ACM Transactions on Graphics, 38(6):232–1, 2019. [16] J. Huang, P. Jaiswal, and R. Rai. Gesture-based system for next generation natural and intuitive interfaces. Artiﬁcial Intelligence for Engineering Design, Analysis and Manufacturing, 33(1):54–68, 2019. [17] S. Hubenschmid, J. Wieland, D. I. Fink, A. Batch, J. Zagermann, N. Elmqvist, and H. Reiterer. ReLive: Bridging in-situ and ex-situ visual analytics for analyzing mixed reality user studies. In Proceedings of the CHI Conference on Human Factors in Computing Systems, 2022. [18] P. Isola, J.-Y. Zhu, T. Zhou, and A. A. Efros. Image-to-image translation with conditional adversarial networks. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pp. 1125– 1134, 2017. [19] S. M. Lehman, S. Elezovikj, H. Ling, and C. C. Tan. ARCHIE++: A cloud-enabled framework for conducting</p>
+        <p class="abstract-text">
+            This paper exploits ubiquitous desktop interaction data as an input source for generating virtual reality (VR) interaction data, which can benefit tasks like user behavior analysis and experience enhancement.
+            Time-varying stroke gestures are selected as the primary focus because of their prevalence across various applications and their diverse patterns.
+            The commonalities (e.g., features like velocity and curvature) between desktop and VR strokes allow the generation of additional dimensions (e.g., z vectors) in VR strokes.
+            However, distribution shifts exist between different interaction environments (i.e., desktop vs. VR), and within the same interaction environment for different strokes by various users, making it challenging to build models capable of generalizing to unseen distributions.
+            To address the challenges, we formulate the problem of generating VR strokes from desktop strokes as a conditional time series generation problem, aiming to learn representations that are capable of handling out-of-distribution data.
+            We propose a novel architecture based on conditional generative adversarial networks, with the generator encompassing three steps: discretizing the output space, characterizing latent distributions, and learning conditional domain-invariant representations.
+            We evaluate the effectiveness of our methods by comparing them with state-of-the-art time series generation models and conducting ablation studies.
+            We further illustrate the applicability of the enriched VR datasets through two applications: VR stroke classification and stroke prediction.
+        </p>
     </div>
     <div class="section">
         <div class="section-title">Links</div>
         <div class="links">
             <a class="link-btn" href="assets/paper.pdf">Paper</a>
-            <a class="link-btn" href="../../publication/index.html">← Back to Publications</a>
+            <a class="link-btn" href="https://github.com/yuanlinping/VRStrokeOOD">Code</a>
         </div>
     </div>
-</div>
-<script>
-function copyBibtex(id){{var e=document.getElementById(id),b=document.getElementById(id+"-btn-text");navigator.clipboard.writeText(e.textContent).then(function(){{b.textContent="Copied!";setTimeout(function(){{b.textContent="Copy"}},2e3)}}).catch(function(){{var t=document.createElement("textarea");t.value=e.textContent;document.body.appendChild(t);t.select();document.execCommand("copy");document.body.removeChild(t);b.textContent="Copied!";setTimeout(function(){{b.textContent="Copy"}},2e3)}})}}
-</script>
+
 
     <div class="section">
         <div class="section-title">BibTeX</div>
@@ -69,12 +77,16 @@ function copyBibtex(id){{var e=document.getElementById(id),b=document.getElement
             <pre id="bibtex-2024_generating_virtual_realit">@inproceedings{yuan2024generating,
     author = {Linping Yuan and Boyu Li and Jindong Wang and Huamin Qu and Wei Zeng},
     title = {{Generating Virtual Reality Stroke Gesture Data from Out-of-Distribution Desktop Stroke Gesture Data}},
-    booktitle = {Proceedings of IEEE Conference on Virtual Reality and 3D User Interfaces},
+    booktitle = {Proceedings of IEEE Conference on Virtual Reality and {3D} User Interfaces},
     pages = {732-742},
     year = {2024},
     doi = {10.1109/VR58804.2024.00093},
 }</pre>
         </div>
     </div>
+</div>
+<script>
+function copyBibtex(id){{var e=document.getElementById(id),b=document.getElementById(id+"-btn-text");navigator.clipboard.writeText(e.textContent).then(function(){{b.textContent="Copied!";setTimeout(function(){{b.textContent="Copy"}},2e3)}}).catch(function(){{var t=document.createElement("textarea");t.value=e.textContent;document.body.appendChild(t);t.select();document.execCommand("copy");document.body.removeChild(t);b.textContent="Copied!";setTimeout(function(){{b.textContent="Copy"}},2e3)}})}}
+</script>
 </body>
 </html>
