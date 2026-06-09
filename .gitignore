@@ -21,3 +21,7 @@ desktop.ini
 
 # macOS
 .DS_Store
+
+# Large presentation files
+*.pptx
+publication/2025_latent_space_map/assets/2025_latentspacemap_pre.pdf
