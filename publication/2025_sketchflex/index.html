@@ -26,6 +26,7 @@
         .copy-btn{position:absolute;top:8px;right:8px;background:var(--primary);color:#fff;border:none;padding:5px 12px;border-radius:4px;cursor:pointer;font-size:12px;font-weight:500;font-family:inherit;transition:background .2s;display:inline-flex;align-items:center;gap:4px}
         .copy-btn:hover{background:var(--primary-hover)}
         .cite-note{font-size:14px;color:var(--text-secondary);margin-bottom:4px}
+        video{width:100%;max-width:760px;border-radius:var(--radius);box-shadow:var(--shadow-md);display:block;margin:0 auto}
         @media(max-width:768px){.paper-title{font-size:20px}.section{padding:20px}.container-main{padding:20px 16px 40px}}
     </style>
 </head>
@@ -55,7 +56,15 @@
         <div class="links">
             <a class="link-btn" href="assets/paper.pdf">Paper</a>
             <a class="link-btn" href="https://github.com/SellLin/SketchFlex">Code</a>
+            <a class="link-btn" href="assets/2025_SketchFlex_Pre.pdf">PPT</a>
         </div>
+    </div>
+    
+    <div class="section center-img">
+        <div class="section-title">Video</div>
+        <video controls preload="none" poster="assets/2025_SketchFlex_Pre.png">
+            <source src="assets/2025_sketchflex_demo.mp4" type="video/mp4">
+        </video>
     </div>
     <div class="section">
         <div class="section-title">BibTeX</div>
