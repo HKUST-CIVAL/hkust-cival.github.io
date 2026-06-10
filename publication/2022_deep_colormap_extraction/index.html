@@ -41,7 +41,7 @@
         <div class="venue">IEEE Transactions on Visualization and Computer Graphics, 28(12): 4048 - 4060, 2022.</div>
         <div class="authors">Lin-Ping Yuan, Wei Zeng*, Siwei Fu, Zhiliang Zeng, Haotian Li, Chi-Wing Fu, Huamin Qu</div>
             <div class="header-links">
-            <a class="header-link" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Paper (coming soon)</a>
+            <a class="header-link" href="assets/2022 Deep_Colormap_Extraction_From_Visualizations.pdf" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>Paper</a>
             <a class="header-link" href="../../publication/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>← Back to Publications</a>
         </div>
     </div>
@@ -51,6 +51,9 @@
         <p class="abstract-text">This article presents a new approach based on deep learning to automatically extract colormaps from visualizations. After summarizing colors in an input visualization image as a Lab color histogram, we pass the histogram to a pre-trained deep neural network, which learns to predict the colormap that produces the visualization. To train the network, we create a new dataset of 64K visualizations that cover a wide variety of data distributions, chart types, and colormaps. The network adopts an atrous spatial pyramid pooling module to capture color features at multiple scales in the input color histograms. We then classify the predicted colormap as discrete or continuous, and refine the predicted colormap based on its color histogram. Quantitative comparisons to existing methods show the superior performance of our approach on both synthetic and real-world visualizations. We further demonstrate the utility of our method with two use cases, i.e., color transfer and color remapping. Index Terms—Color extraction, information visualization, deep learning, color histogram Ç</p>
     </div><div class="section center-img">
         <img class="teaser-img" src="teaser.png" alt="Teaser figure">
+        <img class="teaser-img" src="assets/teaser_3.png" alt="Teaser 3" style="margin-top:16px">
+        <img class="teaser-img" src="assets/pipeline.png" alt="Pipeline" style="margin-top:16px">
+        <img class="teaser-img" src="assets/recoloring_dis_original.png" alt="Recoloring" style="margin-top:16px">
     </div>
 
 
