@@ -40,15 +40,20 @@
         <div class="venue">IEEE Transactions on Image Processing, 30: 6686-6699, 2021.</div>
         <div class="authors">Mengyang Wu, Wei Zeng, Chi-Wing Fu</div>
         <div class="header-links">
+            <a class="header-link" href="assets/2021 FloorLevel-Net.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Paper</a>
             <a class="header-link" href="https://github.com/wumengyangok/FloorLevelNet"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>Code</a>
         </div>
     </div>
 </div>
 <div class="container-main"><div class="section">
         <div class="section-title">Abstract</div>
-        <p class="abstract-text">Mass gathering events occur frequently in urban regions. Not only serious traffic jams, but also safety risks are consequently caused. Although many evacuation strategies have been proposed, the spatiotemporal coordination issue of multiple-modal transport tools is not solved well to deal with the efficiency and safety risk during the traditional evacuations. This study presented a large-scale multi-modal transport macrooptimization evacuation model for urban mass gathering events. By taking full advantages of each kind of public transit vehicles and optimizing their spatiotemporal cooperation with pedestrian evacuation, our models can greatly improve the global evacuation efficiency. Experiments on a realistic event was carried to validate the proposed model. The numerical results demonstrated that, under the premise of no increasing additional vehicle supply, the efficiency of proposed multi-modal transport evacuation can be improved by 49.7%, 46.5%, 118.7%, and 20.8%, compared with pure metro-, bus-, taxi- single-modal-transport evacuation, and simulated multi-modal transport evacuation without adequate optimization, respectively. Index Terms— Evacuation, multi-modal transport, multisource spatiotemporal data, macro-optimization, path planning.</p>
+        <p class="abstract-text">The ability to recognize the position and order of the floor-level lines that divide adjacent building floors can benefit many applications, for example, urban augmented reality (AR). This work tackles the problem of locating floor-level lines in street-view images, using a supervised deep learning approach. Unfortunately, very little data is available for training such a network — current street-view datasets contain either semantic annotations that lack geometric attributes, or rectified facades without perspective priors. To address this issue, we first compile a new dataset and develop a new data augmentation scheme to synthesize training samples by harnessing (i) the rich semantics of existing rectified facades and (ii) perspective priors of buildings in diverse street views. Next, we design FloorLevel-Net, a multi-task learning network that associates explicit features of building facades and implicit floor-level lines, along with a height-attention mechanism to help enforce a vertical ordering of floor-level lines. The generated segmentations are then passed to a second-stage geometry post-processing to exploit self-constrained geometric priors for plausible and consistent reconstruction of floor-level lines. Quantitative and qualitative evaluations conducted on assorted facades in existing datasets and street views from Google demonstrate the effectiveness of our approach.</p>
     </div><div class="section center-img">
-        <img class="teaser-img" src="teaser.png" alt="Teaser figure">
+        <img class="teaser-img" src="assets/workflow.png" alt="Workflow">
+        <div style="height:36px"></div>
+        <img class="teaser-img" src="assets/network.png" alt="Network Architecture">
+        <div style="height:36px"></div>
+        <img class="teaser-img" src="assets/output.png" alt="Output Results">
     </div><div class="section">
         <div class="section-title">BibTeX</div>
         <p class="cite-note">If you find this paper useful, please consider citing it.</p>
