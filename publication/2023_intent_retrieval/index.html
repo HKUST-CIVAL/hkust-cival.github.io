@@ -57,6 +57,10 @@
 <div class="container-main"><div class="section">
         <div class="section-title">Abstract</div>
         <p class="abstract-text">Retrieving charts from a large corpus is a fundamental task that can benefit numerous applications such as visualization recommendations. The retrieved results are expected to conform to both explicit visual attributes (e.g., chart type, colormap) and implicit user intents (e.g., design style, context information) that vary upon application scenarios. However, existing example-based chart retrieval methods are built upon non-decoupled and low-level visual features that are hard to interpret, while definition-based ones are constrained to pre-defined attributes that are hard to extend. In this work, we propose a new framework, namely WYTIWYR (What-You-Think-Is-What-You-Retrieve), that integrates user intents into the chart retrieval process. The framework consists of two stages: first, the Annotation stage disentangles the visual attributes within the query chart; and second, the Retrieval stage embeds the user's intent with customized text prompt as well as bitmap query chart, to recall targeted retrieval result. We develop a prototype WYTIWYR system leveraging a contrastive language-image pre-training (CLIP) model to achieve zero-shot classification as well as multi-modal input encoding, and test the prototype on a large corpus with charts crawled from the Internet. Quantitative experiments, case studies, and qualitative interviews are conducted. The results demonstrate the usability and effectiveness of our proposed framework.</p>
+    </div><div class="section center-img">
+        <img class="teaser-img" src="assets/pipeline.png" alt="Pipeline">
+        <img class="teaser-img" src="assets/retrieval.png" alt="Retrieval" style="margin-top:16px">
+        <img class="teaser-img" src="assets/result.png" alt="Result" style="margin-top:16px">
     </div><div class="section">
         <div class="section-title">Video</div>
         <video controls preload="none" poster="assets/intent-retrieval_poster.png">
